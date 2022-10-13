@@ -10,6 +10,11 @@
     src: url('../fonts/DancingScript-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'Mary Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +22,7 @@
     outline: none;
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -212,6 +218,112 @@ html,body {
 
 /*cORPO*/
 
+main {
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.categ {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin-top: 45px;
+}
+
+.categ menu ul {
+    display: flex;
+}
+
+.categ menu li {
+    position: relative;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.categ menu li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #fd7b64;
+    border-radius: 100px;
+    transition: width 0.4s ease;
+}
+
+.categ menu li:hover::before {
+    width: 80%;
+    animation: vai-vem 0.4s ease-out alternate backwards;
+}
+
+.categ menu ul li:first-child {
+    border-bottom: 3px solid #fd7b64;
+}
+
+.categ menu ul li:not(:first-child) {
+    margin-left: 3rem;
+}
+
+.cardz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardz .card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 15%;
+}
+
+.cardz .card:not(:first-child){
+    margin-left: 10px;
+}
+
+.cardz .card div {
+    position: relative;
+    margin: auto;
+    height: 5rem;
+    width: 100%;
+    background-color: red;
+    border-radius: 7px;
+}
+
+.cardz .card .card-1 {
+    background: url('../img/dinner.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+}
+
+.cardz .card .card-2 {
+    background: url('../img/makeup-colors.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 11rem;
+}
+
+.cardz .card .card-3 {
+    background: url('../img/cub.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 14rem;
+}
+
+.cardz .card .card-4 {
+    background: url('../img/anel.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+}
+
+
+.cardz .card .spn {
+    margin-top: 15px;
+    font-family: 'Mary Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 /*PÉS*/
 
 /*ANIMAÇÕES*/
@@ -242,5 +354,19 @@ html,body {
 
     100%{
         background-position: 50% 0;
+    }
+}
+
+@keyframes vai-vem {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 80%;
     }
 }
