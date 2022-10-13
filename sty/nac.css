@@ -1,0 +1,246 @@
+/*GERAL*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+html,body {
+    height: 100vh;
+}
+
+/*cABEÇA*/
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-menu .logo {
+    font-family: 'title';
+    font-size: 3rem;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu ul li:not(:first-child){
+    margin-left: 40px;
+}
+
+.header-menu .log a:last-child{
+    margin-left: 10px;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    background: url('../img/figurinhas.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #a3d9fb79, #8983d796, #ff00808e, #ff8c0071);
+    animation: back 10s ease alternate forwards infinite;
+    background-size: 300% 300%;
+}
+
+.banner .slogan {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 3em;
+    font-family: 'title';
+}
+
+.banner .screen {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 90%;
+    display: flex;
+}
+
+.banner .screen div:not(:first-child){
+    margin-left: 30px;
+}
+
+.banner .screen div:last-child {
+    margin-right: 10px;
+}
+
+.banner .screen div {
+    position: relative;
+    height: 100%;
+    width: 10rem;
+    background: #fff;
+    border-radius: 10px;
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner .screen div:hover {
+    width: 15rem;
+}
+
+
+.banner .screen .screen-1 {
+    background: url('../img/moda.jpeg') no-repeat center center;
+    background-size: cover;
+}
+.banner .screen .screen-1::before {
+    content: 'Fashion';
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: #fff;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.banner .screen .screen-1:hover::before{
+    animation: rotain 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) alternate forwards;
+}
+
+.banner .screen .screen-1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000d3, transparent);
+}
+
+.banner .screen .screen-2 {
+    background: url('../img/education.jpeg') no-repeat center center;
+    background-size: cover;
+}
+.banner .screen .screen-2::before {
+    content: 'Educação';
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+    color: #fff;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.banner .screen .screen-2:hover::before{
+    animation: rotain 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) alternate forwards;
+}
+
+.banner .screen .screen-2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000d3, transparent);
+}
+
+
+.banner .screen .screen-3 {
+    background: url('../img/cheff.jpg') no-repeat center center;
+    background-size: cover;
+}
+.banner .screen .screen-3::before {
+    content: 'Comida';
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: #fff;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.banner .screen .screen-3:hover::before{
+    animation: rotain 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) alternate forwards;
+}
+
+.banner .screen .screen-3::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000d3, transparent);
+}
+
+
+/*cORPO*/
+
+/*PÉS*/
+
+/*ANIMAÇÕES*/
+
+@keyframes rotain {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        font-size: 1.5rem;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        font-size: 1.3em;
+    }
+}
+
+@keyframes back {
+    0%{
+        background-position: 50% 0;
+    }
+
+    50%{
+        background-position: 100% 0;
+    }
+
+    100%{
+        background-position: 50% 0;
+    }
+}
