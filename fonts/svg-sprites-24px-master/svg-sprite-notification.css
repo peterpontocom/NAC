@@ -1,0 +1,486 @@
+.svg-adb {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 0 no-repeat;
+}
+
+.svg-adb-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_flat {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 33.333333333333336% no-repeat;
+}
+
+.svg-airline_seat_flat-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_flat_angled {
+	background: url("svg-sprite-notification.svg") 0 16.666666666666668% no-repeat;
+}
+
+.svg-airline_seat_flat_angled-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_individual_suite {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 16.666666666666668% no-repeat;
+}
+
+.svg-airline_seat_individual_suite-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_legroom_extra {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 0 no-repeat;
+}
+
+.svg-airline_seat_legroom_extra-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_legroom_normal {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 16.666666666666668% no-repeat;
+}
+
+.svg-airline_seat_legroom_normal-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_legroom_reduced {
+	background: url("svg-sprite-notification.svg") 0 33.333333333333336% no-repeat;
+}
+
+.svg-airline_seat_legroom_reduced-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_recline_extra {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 33.333333333333336% no-repeat;
+}
+
+.svg-airline_seat_recline_extra-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-airline_seat_recline_normal {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 33.333333333333336% no-repeat;
+}
+
+.svg-airline_seat_recline_normal-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-bluetooth_audio {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 0 no-repeat;
+}
+
+.svg-bluetooth_audio-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-confirmation_number {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 16.666666666666668% no-repeat;
+}
+
+.svg-confirmation_number-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-disc_full {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 33.333333333333336% no-repeat;
+}
+
+.svg-disc_full-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-do_not_disturb {
+	background: url("svg-sprite-notification.svg") 0 50% no-repeat;
+}
+
+.svg-do_not_disturb-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-do_not_disturb_alt {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 50% no-repeat;
+}
+
+.svg-do_not_disturb_alt-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-do_not_disturb_off {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 50% no-repeat;
+}
+
+.svg-do_not_disturb_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-do_not_disturb_on {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 50% no-repeat;
+}
+
+.svg-do_not_disturb_on-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-drive_eta {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 0 no-repeat;
+}
+
+.svg-drive_eta-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-enhanced_encryption {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 16.666666666666668% no-repeat;
+}
+
+.svg-enhanced_encryption-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-event_available {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 33.333333333333336% no-repeat;
+}
+
+.svg-event_available-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-event_busy {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 50% no-repeat;
+}
+
+.svg-event_busy-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-event_note {
+	background: url("svg-sprite-notification.svg") 0 66.66666666666667% no-repeat;
+}
+
+.svg-event_note-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-folder_special {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 66.66666666666667% no-repeat;
+}
+
+.svg-folder_special-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-live_tv {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 66.66666666666667% no-repeat;
+}
+
+.svg-live_tv-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mms {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 66.66666666666667% no-repeat;
+}
+
+.svg-mms-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-more {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 66.66666666666667% no-repeat;
+}
+
+.svg-more-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-network_check {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 0 no-repeat;
+}
+
+.svg-network_check-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-network_locked {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 16.666666666666668% no-repeat;
+}
+
+.svg-network_locked-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-no_encryption {
+	background: url("svg-sprite-notification.svg") 0 0 no-repeat;
+}
+
+.svg-no_encryption-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-ondemand_video {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 50% no-repeat;
+}
+
+.svg-ondemand_video-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-personal_video {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 66.66666666666667% no-repeat;
+}
+
+.svg-personal_video-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_bluetooth_speaker {
+	background: url("svg-sprite-notification.svg") 0 83.33333333333333% no-repeat;
+}
+
+.svg-phone_bluetooth_speaker-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_forwarded {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 83.33333333333333% no-repeat;
+}
+
+.svg-phone_forwarded-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_in_talk {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 83.33333333333333% no-repeat;
+}
+
+.svg-phone_in_talk-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_locked {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 83.33333333333333% no-repeat;
+}
+
+.svg-phone_locked-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_missed {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 83.33333333333333% no-repeat;
+}
+
+.svg-phone_missed-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_paused {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 83.33333333333333% no-repeat;
+}
+
+.svg-phone_paused-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-power {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 0 no-repeat;
+}
+
+.svg-power-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-priority_high {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 16.666666666666668% no-repeat;
+}
+
+.svg-priority_high-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-rv_hookup {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 33.333333333333336% no-repeat;
+}
+
+.svg-rv_hookup-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sd_card {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 50% no-repeat;
+}
+
+.svg-sd_card-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sim_card_alert {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 66.66666666666667% no-repeat;
+}
+
+.svg-sim_card_alert-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sms {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 83.33333333333333% no-repeat;
+}
+
+.svg-sms-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sms_failed {
+	background: url("svg-sprite-notification.svg") 0 100% no-repeat;
+}
+
+.svg-sms_failed-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sync {
+	background: url("svg-sprite-notification.svg") 14.285714285714286% 100% no-repeat;
+}
+
+.svg-sync-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sync_disabled {
+	background: url("svg-sprite-notification.svg") 28.571428571428573% 100% no-repeat;
+}
+
+.svg-sync_disabled-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sync_problem {
+	background: url("svg-sprite-notification.svg") 42.857142857142854% 100% no-repeat;
+}
+
+.svg-sync_problem-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-system_update {
+	background: url("svg-sprite-notification.svg") 57.142857142857146% 100% no-repeat;
+}
+
+.svg-system_update-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tap_and_play {
+	background: url("svg-sprite-notification.svg") 71.42857142857143% 100% no-repeat;
+}
+
+.svg-tap_and_play-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-time_to_leave {
+	background: url("svg-sprite-notification.svg") 85.71428571428571% 100% no-repeat;
+}
+
+.svg-time_to_leave-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-vibration {
+	background: url("svg-sprite-notification.svg") 100% 0 no-repeat;
+}
+
+.svg-vibration-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-voice_chat {
+	background: url("svg-sprite-notification.svg") 100% 16.666666666666668% no-repeat;
+}
+
+.svg-voice_chat-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-vpn_lock {
+	background: url("svg-sprite-notification.svg") 100% 33.333333333333336% no-repeat;
+}
+
+.svg-vpn_lock-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-wc {
+	background: url("svg-sprite-notification.svg") 100% 50% no-repeat;
+}
+
+.svg-wc-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-wifi {
+	background: url("svg-sprite-notification.svg") 100% 66.66666666666667% no-repeat;
+}
+
+.svg-wifi-dims {
+	width: 24px;
+	height: 24px;
+}
+

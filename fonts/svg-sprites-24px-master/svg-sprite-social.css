@@ -1,0 +1,270 @@
+.svg-cake {
+	background: url("svg-sprite-social.svg") 20% 0 no-repeat;
+}
+
+.svg-cake-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-domain {
+	background: url("svg-sprite-social.svg") 60% 75% no-repeat;
+}
+
+.svg-domain-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-group {
+	background: url("svg-sprite-social.svg") 0 25% no-repeat;
+}
+
+.svg-group-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-group_add {
+	background: url("svg-sprite-social.svg") 20% 25% no-repeat;
+}
+
+.svg-group_add-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-location_city {
+	background: url("svg-sprite-social.svg") 40% 0 no-repeat;
+}
+
+.svg-location_city-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mood {
+	background: url("svg-sprite-social.svg") 40% 25% no-repeat;
+}
+
+.svg-mood-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mood_bad {
+	background: url("svg-sprite-social.svg") 0 50% no-repeat;
+}
+
+.svg-mood_bad-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-notifications {
+	background: url("svg-sprite-social.svg") 20% 50% no-repeat;
+}
+
+.svg-notifications-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-notifications_active {
+	background: url("svg-sprite-social.svg") 40% 50% no-repeat;
+}
+
+.svg-notifications_active-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-notifications_none {
+	background: url("svg-sprite-social.svg") 60% 0 no-repeat;
+}
+
+.svg-notifications_none-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-notifications_off {
+	background: url("svg-sprite-social.svg") 60% 25% no-repeat;
+}
+
+.svg-notifications_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-notifications_paused {
+	background: url("svg-sprite-social.svg") 60% 50% no-repeat;
+}
+
+.svg-notifications_paused-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-pages {
+	background: url("svg-sprite-social.svg") 0 75% no-repeat;
+}
+
+.svg-pages-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-party_mode {
+	background: url("svg-sprite-social.svg") 20% 75% no-repeat;
+}
+
+.svg-party_mode-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-people {
+	background: url("svg-sprite-social.svg") 40% 75% no-repeat;
+}
+
+.svg-people-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-people_outline {
+	background: url("svg-sprite-social.svg") 0 0 no-repeat;
+}
+
+.svg-people_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-person {
+	background: url("svg-sprite-social.svg") 80% 0 no-repeat;
+}
+
+.svg-person-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-person_add {
+	background: url("svg-sprite-social.svg") 80% 25% no-repeat;
+}
+
+.svg-person_add-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-person_outline {
+	background: url("svg-sprite-social.svg") 80% 50% no-repeat;
+}
+
+.svg-person_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-plus_one {
+	background: url("svg-sprite-social.svg") 80% 75% no-repeat;
+}
+
+.svg-plus_one-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-poll {
+	background: url("svg-sprite-social.svg") 0 100% no-repeat;
+}
+
+.svg-poll-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-public {
+	background: url("svg-sprite-social.svg") 20% 100% no-repeat;
+}
+
+.svg-public-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-school {
+	background: url("svg-sprite-social.svg") 40% 100% no-repeat;
+}
+
+.svg-school-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sentiment_dissatisfied {
+	background: url("svg-sprite-social.svg") 60% 100% no-repeat;
+}
+
+.svg-sentiment_dissatisfied-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sentiment_neutral {
+	background: url("svg-sprite-social.svg") 80% 100% no-repeat;
+}
+
+.svg-sentiment_neutral-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sentiment_satisfied {
+	background: url("svg-sprite-social.svg") 100% 0 no-repeat;
+}
+
+.svg-sentiment_satisfied-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sentiment_very_dissatisfied {
+	background: url("svg-sprite-social.svg") 100% 25% no-repeat;
+}
+
+.svg-sentiment_very_dissatisfied-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sentiment_very_satisfied {
+	background: url("svg-sprite-social.svg") 100% 50% no-repeat;
+}
+
+.svg-sentiment_very_satisfied-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-share {
+	background: url("svg-sprite-social.svg") 100% 75% no-repeat;
+}
+
+.svg-share-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-whatshot {
+	background: url("svg-sprite-social.svg") 100% 100% no-repeat;
+}
+
+.svg-whatshot-dims {
+	width: 24px;
+	height: 24px;
+}
+

@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block}</style>
+		
+<!--
+	
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite. 
+
+-->
+
+<style type="text/css">
+.svg-add_a_photo {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-add_to_photos {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-adjust {
+	background: url("svg-sprite-image.svg") 0 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-assistant {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-assistant_photo {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-audiotrack {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-blur_circular {
+	background: url("svg-sprite-image.svg") 0 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-blur_linear {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-blur_off {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-blur_on {
+	background: url("svg-sprite-image.svg") 25% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_1 {
+	background: url("svg-sprite-image.svg") 25% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_2 {
+	background: url("svg-sprite-image.svg") 25% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_3 {
+	background: url("svg-sprite-image.svg") 0 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_4 {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_5 {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_6 {
+	background: url("svg-sprite-image.svg") 25% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brightness_7 {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-broken_image {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-brush {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-burst_mode {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-camera {
+	background: url("svg-sprite-image.svg") 0 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-camera_alt {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-camera_front {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-camera_rear {
+	background: url("svg-sprite-image.svg") 25% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-camera_roll {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-center_focus_strong {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-center_focus_weak {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-collections {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-collections_bookmark {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-color_lens {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-colorize {
+	background: url("svg-sprite-image.svg") 0 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-compare {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-control_point {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-control_point_duplicate {
+	background: url("svg-sprite-image.svg") 25% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_16_9 {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_3_2 {
+	background: url("svg-sprite-image.svg") 50% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_5_4 {
+	background: url("svg-sprite-image.svg") 50% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_7_5 {
+	background: url("svg-sprite-image.svg") 50% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_din {
+	background: url("svg-sprite-image.svg") 50% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_free {
+	background: url("svg-sprite-image.svg") 50% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_landscape {
+	background: url("svg-sprite-image.svg") 50% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_original {
+	background: url("svg-sprite-image.svg") 0 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_portrait {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_rotate {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-crop_square {
+	background: url("svg-sprite-image.svg") 25% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-dehaze {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-details {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-edit {
+	background: url("svg-sprite-image.svg") 50% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure_neg_1 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure_neg_2 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure_plus_1 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure_plus_2 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-exposure_zero {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_1 {
+	background: url("svg-sprite-image.svg") 0 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_2 {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_3 {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_4 {
+	background: url("svg-sprite-image.svg") 25% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_5 {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_6 {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_7 {
+	background: url("svg-sprite-image.svg") 50% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_8 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_9 {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_9_plus {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_b_and_w {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_center_focus {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_drama {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_frames {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_hdr {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_none {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_tilt_shift {
+	background: url("svg-sprite-image.svg") 0 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-filter_vintage {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flare {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flash_auto {
+	background: url("svg-sprite-image.svg") 25% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flash_off {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flash_on {
+	background: url("svg-sprite-image.svg") 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flip {
+	background: url("svg-sprite-image.svg") 50% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-gradient {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-grain {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-grid_off {
+	background: url("svg-sprite-image.svg") 75% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-grid_on {
+	background: url("svg-sprite-image.svg") 75% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-hdr_off {
+	background: url("svg-sprite-image.svg") 75% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-hdr_on {
+	background: url("svg-sprite-image.svg") 75% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-hdr_strong {
+	background: url("svg-sprite-image.svg") 75% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-hdr_weak {
+	background: url("svg-sprite-image.svg") 75% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-healing {
+	background: url("svg-sprite-image.svg") 75% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-image {
+	background: url("svg-sprite-image.svg") 75% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-image_aspect_ratio {
+	background: url("svg-sprite-image.svg") 75% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-iso {
+	background: url("svg-sprite-image.svg") 0 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-landscape {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-leak_add {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-leak_remove {
+	background: url("svg-sprite-image.svg") 25% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-lens {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-linked_camera {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks {
+	background: url("svg-sprite-image.svg") 50% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_3 {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_4 {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_5 {
+	background: url("svg-sprite-image.svg") 75% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_6 {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_one {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-looks_two {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-loupe {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-monochrome_photos {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-movie_creation {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-movie_filter {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-music_note {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-nature {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-nature_people {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-navigate_before {
+	background: url("svg-sprite-image.svg") 0 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-navigate_next {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-palette {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-panorama {
+	background: url("svg-sprite-image.svg") 25% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-panorama_fish_eye {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-panorama_horizontal {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-panorama_vertical {
+	background: url("svg-sprite-image.svg") 50% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-panorama_wide_angle {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_album {
+	background: url("svg-sprite-image.svg") 75% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_camera {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_filter {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_library {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_size_select_actual {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_size_select_large {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-photo_size_select_small {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-picture_as_pdf {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-portrait {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-remove_red_eye {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-rotate_90_degrees_ccw {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-rotate_left {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-rotate_right {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-slideshow {
+	background: url("svg-sprite-image.svg") 0 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-straighten {
+	background: url("svg-sprite-image.svg") 8.333333333333334% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-style {
+	background: url("svg-sprite-image.svg") 16.666666666666668% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-switch_camera {
+	background: url("svg-sprite-image.svg") 25% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-switch_video {
+	background: url("svg-sprite-image.svg") 33.333333333333336% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-tag_faces {
+	background: url("svg-sprite-image.svg") 41.666666666666664% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-texture {
+	background: url("svg-sprite-image.svg") 50% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-timelapse {
+	background: url("svg-sprite-image.svg") 58.333333333333336% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-timer {
+	background: url("svg-sprite-image.svg") 66.66666666666667% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-timer_10 {
+	background: url("svg-sprite-image.svg") 75% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-timer_3 {
+	background: url("svg-sprite-image.svg") 83.33333333333333% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-timer_off {
+	background: url("svg-sprite-image.svg") 91.66666666666667% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-tonality {
+	background: url("svg-sprite-image.svg") 100% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-transform {
+	background: url("svg-sprite-image.svg") 100% 9.090909090909092% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-tune {
+	background: url("svg-sprite-image.svg") 100% 18.181818181818183% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-view_comfy {
+	background: url("svg-sprite-image.svg") 100% 27.272727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-view_compact {
+	background: url("svg-sprite-image.svg") 100% 36.36363636363637% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-vignette {
+	background: url("svg-sprite-image.svg") 100% 45.45454545454545% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wb_auto {
+	background: url("svg-sprite-image.svg") 100% 54.54545454545455% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wb_cloudy {
+	background: url("svg-sprite-image.svg") 100% 63.63636363636363% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wb_incandescent {
+	background: url("svg-sprite-image.svg") 100% 72.72727272727273% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wb_iridescent {
+	background: url("svg-sprite-image.svg") 100% 81.81818181818181% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wb_sunny {
+	background: url("svg-sprite-image.svg") 100% 90.9090909090909% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+			
+<!--
+	
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				
+				<li title="add_a_photo">
+					<div class="icon-box">
+						
+						<!-- add_a_photo -->
+						<i class="svg-add_a_photo">add_a_photo</i>
+						
+					</div>
+					<h2>add_a_photo</h2>
+				</li>
+				<li title="add_to_photos">
+					<div class="icon-box">
+						
+						<!-- add_to_photos -->
+						<i class="svg-add_to_photos">add_to_photos</i>
+						
+					</div>
+					<h2>add_to_photos</h2>
+				</li>
+				<li title="adjust">
+					<div class="icon-box">
+						
+						<!-- adjust -->
+						<i class="svg-adjust">adjust</i>
+						
+					</div>
+					<h2>adjust</h2>
+				</li>
+				<li title="assistant">
+					<div class="icon-box">
+						
+						<!-- assistant -->
+						<i class="svg-assistant">assistant</i>
+						
+					</div>
+					<h2>assistant</h2>
+				</li>
+				<li title="assistant_photo">
+					<div class="icon-box">
+						
+						<!-- assistant_photo -->
+						<i class="svg-assistant_photo">assistant_photo</i>
+						
+					</div>
+					<h2>assistant_photo</h2>
+				</li>
+				<li title="audiotrack">
+					<div class="icon-box">
+						
+						<!-- audiotrack -->
+						<i class="svg-audiotrack">audiotrack</i>
+						
+					</div>
+					<h2>audiotrack</h2>
+				</li>
+				<li title="blur_circular">
+					<div class="icon-box">
+						
+						<!-- blur_circular -->
+						<i class="svg-blur_circular">blur_circular</i>
+						
+					</div>
+					<h2>blur_circular</h2>
+				</li>
+				<li title="blur_linear">
+					<div class="icon-box">
+						
+						<!-- blur_linear -->
+						<i class="svg-blur_linear">blur_linear</i>
+						
+					</div>
+					<h2>blur_linear</h2>
+				</li>
+				<li title="blur_off">
+					<div class="icon-box">
+						
+						<!-- blur_off -->
+						<i class="svg-blur_off">blur_off</i>
+						
+					</div>
+					<h2>blur_off</h2>
+				</li>
+				<li title="blur_on">
+					<div class="icon-box">
+						
+						<!-- blur_on -->
+						<i class="svg-blur_on">blur_on</i>
+						
+					</div>
+					<h2>blur_on</h2>
+				</li>
+				<li title="brightness_1">
+					<div class="icon-box">
+						
+						<!-- brightness_1 -->
+						<i class="svg-brightness_1">brightness_1</i>
+						
+					</div>
+					<h2>brightness_1</h2>
+				</li>
+				<li title="brightness_2">
+					<div class="icon-box">
+						
+						<!-- brightness_2 -->
+						<i class="svg-brightness_2">brightness_2</i>
+						
+					</div>
+					<h2>brightness_2</h2>
+				</li>
+				<li title="brightness_3">
+					<div class="icon-box">
+						
+						<!-- brightness_3 -->
+						<i class="svg-brightness_3">brightness_3</i>
+						
+					</div>
+					<h2>brightness_3</h2>
+				</li>
+				<li title="brightness_4">
+					<div class="icon-box">
+						
+						<!-- brightness_4 -->
+						<i class="svg-brightness_4">brightness_4</i>
+						
+					</div>
+					<h2>brightness_4</h2>
+				</li>
+				<li title="brightness_5">
+					<div class="icon-box">
+						
+						<!-- brightness_5 -->
+						<i class="svg-brightness_5">brightness_5</i>
+						
+					</div>
+					<h2>brightness_5</h2>
+				</li>
+				<li title="brightness_6">
+					<div class="icon-box">
+						
+						<!-- brightness_6 -->
+						<i class="svg-brightness_6">brightness_6</i>
+						
+					</div>
+					<h2>brightness_6</h2>
+				</li>
+				<li title="brightness_7">
+					<div class="icon-box">
+						
+						<!-- brightness_7 -->
+						<i class="svg-brightness_7">brightness_7</i>
+						
+					</div>
+					<h2>brightness_7</h2>
+				</li>
+				<li title="broken_image">
+					<div class="icon-box">
+						
+						<!-- broken_image -->
+						<i class="svg-broken_image">broken_image</i>
+						
+					</div>
+					<h2>broken_image</h2>
+				</li>
+				<li title="brush">
+					<div class="icon-box">
+						
+						<!-- brush -->
+						<i class="svg-brush">brush</i>
+						
+					</div>
+					<h2>brush</h2>
+				</li>
+				<li title="burst_mode">
+					<div class="icon-box">
+						
+						<!-- burst_mode -->
+						<i class="svg-burst_mode">burst_mode</i>
+						
+					</div>
+					<h2>burst_mode</h2>
+				</li>
+				<li title="camera">
+					<div class="icon-box">
+						
+						<!-- camera -->
+						<i class="svg-camera">camera</i>
+						
+					</div>
+					<h2>camera</h2>
+				</li>
+				<li title="camera_alt">
+					<div class="icon-box">
+						
+						<!-- camera_alt -->
+						<i class="svg-camera_alt">camera_alt</i>
+						
+					</div>
+					<h2>camera_alt</h2>
+				</li>
+				<li title="camera_front">
+					<div class="icon-box">
+						
+						<!-- camera_front -->
+						<i class="svg-camera_front">camera_front</i>
+						
+					</div>
+					<h2>camera_front</h2>
+				</li>
+				<li title="camera_rear">
+					<div class="icon-box">
+						
+						<!-- camera_rear -->
+						<i class="svg-camera_rear">camera_rear</i>
+						
+					</div>
+					<h2>camera_rear</h2>
+				</li>
+				<li title="camera_roll">
+					<div class="icon-box">
+						
+						<!-- camera_roll -->
+						<i class="svg-camera_roll">camera_roll</i>
+						
+					</div>
+					<h2>camera_roll</h2>
+				</li>
+				<li title="center_focus_strong">
+					<div class="icon-box">
+						
+						<!-- center_focus_strong -->
+						<i class="svg-center_focus_strong">center_focus_strong</i>
+						
+					</div>
+					<h2>center_focus_strong</h2>
+				</li>
+				<li title="center_focus_weak">
+					<div class="icon-box">
+						
+						<!-- center_focus_weak -->
+						<i class="svg-center_focus_weak">center_focus_weak</i>
+						
+					</div>
+					<h2>center_focus_weak</h2>
+				</li>
+				<li title="collections">
+					<div class="icon-box">
+						
+						<!-- collections -->
+						<i class="svg-collections">collections</i>
+						
+					</div>
+					<h2>collections</h2>
+				</li>
+				<li title="collections_bookmark">
+					<div class="icon-box">
+						
+						<!-- collections_bookmark -->
+						<i class="svg-collections_bookmark">collections_bookmark</i>
+						
+					</div>
+					<h2>collections_bookmark</h2>
+				</li>
+				<li title="color_lens">
+					<div class="icon-box">
+						
+						<!-- color_lens -->
+						<i class="svg-color_lens">color_lens</i>
+						
+					</div>
+					<h2>color_lens</h2>
+				</li>
+				<li title="colorize">
+					<div class="icon-box">
+						
+						<!-- colorize -->
+						<i class="svg-colorize">colorize</i>
+						
+					</div>
+					<h2>colorize</h2>
+				</li>
+				<li title="compare">
+					<div class="icon-box">
+						
+						<!-- compare -->
+						<i class="svg-compare">compare</i>
+						
+					</div>
+					<h2>compare</h2>
+				</li>
+				<li title="control_point">
+					<div class="icon-box">
+						
+						<!-- control_point -->
+						<i class="svg-control_point">control_point</i>
+						
+					</div>
+					<h2>control_point</h2>
+				</li>
+				<li title="control_point_duplicate">
+					<div class="icon-box">
+						
+						<!-- control_point_duplicate -->
+						<i class="svg-control_point_duplicate">control_point_duplicate</i>
+						
+					</div>
+					<h2>control_point_duplicate</h2>
+				</li>
+				<li title="crop">
+					<div class="icon-box">
+						
+						<!-- crop -->
+						<i class="svg-crop">crop</i>
+						
+					</div>
+					<h2>crop</h2>
+				</li>
+				<li title="crop_16_9">
+					<div class="icon-box">
+						
+						<!-- crop_16_9 -->
+						<i class="svg-crop_16_9">crop_16_9</i>
+						
+					</div>
+					<h2>crop_16_9</h2>
+				</li>
+				<li title="crop_3_2">
+					<div class="icon-box">
+						
+						<!-- crop_3_2 -->
+						<i class="svg-crop_3_2">crop_3_2</i>
+						
+					</div>
+					<h2>crop_3_2</h2>
+				</li>
+				<li title="crop_5_4">
+					<div class="icon-box">
+						
+						<!-- crop_5_4 -->
+						<i class="svg-crop_5_4">crop_5_4</i>
+						
+					</div>
+					<h2>crop_5_4</h2>
+				</li>
+				<li title="crop_7_5">
+					<div class="icon-box">
+						
+						<!-- crop_7_5 -->
+						<i class="svg-crop_7_5">crop_7_5</i>
+						
+					</div>
+					<h2>crop_7_5</h2>
+				</li>
+				<li title="crop_din">
+					<div class="icon-box">
+						
+						<!-- crop_din -->
+						<i class="svg-crop_din">crop_din</i>
+						
+					</div>
+					<h2>crop_din</h2>
+				</li>
+				<li title="crop_free">
+					<div class="icon-box">
+						
+						<!-- crop_free -->
+						<i class="svg-crop_free">crop_free</i>
+						
+					</div>
+					<h2>crop_free</h2>
+				</li>
+				<li title="crop_landscape">
+					<div class="icon-box">
+						
+						<!-- crop_landscape -->
+						<i class="svg-crop_landscape">crop_landscape</i>
+						
+					</div>
+					<h2>crop_landscape</h2>
+				</li>
+				<li title="crop_original">
+					<div class="icon-box">
+						
+						<!-- crop_original -->
+						<i class="svg-crop_original">crop_original</i>
+						
+					</div>
+					<h2>crop_original</h2>
+				</li>
+				<li title="crop_portrait">
+					<div class="icon-box">
+						
+						<!-- crop_portrait -->
+						<i class="svg-crop_portrait">crop_portrait</i>
+						
+					</div>
+					<h2>crop_portrait</h2>
+				</li>
+				<li title="crop_rotate">
+					<div class="icon-box">
+						
+						<!-- crop_rotate -->
+						<i class="svg-crop_rotate">crop_rotate</i>
+						
+					</div>
+					<h2>crop_rotate</h2>
+				</li>
+				<li title="crop_square">
+					<div class="icon-box">
+						
+						<!-- crop_square -->
+						<i class="svg-crop_square">crop_square</i>
+						
+					</div>
+					<h2>crop_square</h2>
+				</li>
+				<li title="dehaze">
+					<div class="icon-box">
+						
+						<!-- dehaze -->
+						<i class="svg-dehaze">dehaze</i>
+						
+					</div>
+					<h2>dehaze</h2>
+				</li>
+				<li title="details">
+					<div class="icon-box">
+						
+						<!-- details -->
+						<i class="svg-details">details</i>
+						
+					</div>
+					<h2>details</h2>
+				</li>
+				<li title="edit">
+					<div class="icon-box">
+						
+						<!-- edit -->
+						<i class="svg-edit">edit</i>
+						
+					</div>
+					<h2>edit</h2>
+				</li>
+				<li title="exposure">
+					<div class="icon-box">
+						
+						<!-- exposure -->
+						<i class="svg-exposure">exposure</i>
+						
+					</div>
+					<h2>exposure</h2>
+				</li>
+				<li title="exposure_neg_1">
+					<div class="icon-box">
+						
+						<!-- exposure_neg_1 -->
+						<i class="svg-exposure_neg_1">exposure_neg_1</i>
+						
+					</div>
+					<h2>exposure_neg_1</h2>
+				</li>
+				<li title="exposure_neg_2">
+					<div class="icon-box">
+						
+						<!-- exposure_neg_2 -->
+						<i class="svg-exposure_neg_2">exposure_neg_2</i>
+						
+					</div>
+					<h2>exposure_neg_2</h2>
+				</li>
+				<li title="exposure_plus_1">
+					<div class="icon-box">
+						
+						<!-- exposure_plus_1 -->
+						<i class="svg-exposure_plus_1">exposure_plus_1</i>
+						
+					</div>
+					<h2>exposure_plus_1</h2>
+				</li>
+				<li title="exposure_plus_2">
+					<div class="icon-box">
+						
+						<!-- exposure_plus_2 -->
+						<i class="svg-exposure_plus_2">exposure_plus_2</i>
+						
+					</div>
+					<h2>exposure_plus_2</h2>
+				</li>
+				<li title="exposure_zero">
+					<div class="icon-box">
+						
+						<!-- exposure_zero -->
+						<i class="svg-exposure_zero">exposure_zero</i>
+						
+					</div>
+					<h2>exposure_zero</h2>
+				</li>
+				<li title="filter">
+					<div class="icon-box">
+						
+						<!-- filter -->
+						<i class="svg-filter">filter</i>
+						
+					</div>
+					<h2>filter</h2>
+				</li>
+				<li title="filter_1">
+					<div class="icon-box">
+						
+						<!-- filter_1 -->
+						<i class="svg-filter_1">filter_1</i>
+						
+					</div>
+					<h2>filter_1</h2>
+				</li>
+				<li title="filter_2">
+					<div class="icon-box">
+						
+						<!-- filter_2 -->
+						<i class="svg-filter_2">filter_2</i>
+						
+					</div>
+					<h2>filter_2</h2>
+				</li>
+				<li title="filter_3">
+					<div class="icon-box">
+						
+						<!-- filter_3 -->
+						<i class="svg-filter_3">filter_3</i>
+						
+					</div>
+					<h2>filter_3</h2>
+				</li>
+				<li title="filter_4">
+					<div class="icon-box">
+						
+						<!-- filter_4 -->
+						<i class="svg-filter_4">filter_4</i>
+						
+					</div>
+					<h2>filter_4</h2>
+				</li>
+				<li title="filter_5">
+					<div class="icon-box">
+						
+						<!-- filter_5 -->
+						<i class="svg-filter_5">filter_5</i>
+						
+					</div>
+					<h2>filter_5</h2>
+				</li>
+				<li title="filter_6">
+					<div class="icon-box">
+						
+						<!-- filter_6 -->
+						<i class="svg-filter_6">filter_6</i>
+						
+					</div>
+					<h2>filter_6</h2>
+				</li>
+				<li title="filter_7">
+					<div class="icon-box">
+						
+						<!-- filter_7 -->
+						<i class="svg-filter_7">filter_7</i>
+						
+					</div>
+					<h2>filter_7</h2>
+				</li>
+				<li title="filter_8">
+					<div class="icon-box">
+						
+						<!-- filter_8 -->
+						<i class="svg-filter_8">filter_8</i>
+						
+					</div>
+					<h2>filter_8</h2>
+				</li>
+				<li title="filter_9">
+					<div class="icon-box">
+						
+						<!-- filter_9 -->
+						<i class="svg-filter_9">filter_9</i>
+						
+					</div>
+					<h2>filter_9</h2>
+				</li>
+				<li title="filter_9_plus">
+					<div class="icon-box">
+						
+						<!-- filter_9_plus -->
+						<i class="svg-filter_9_plus">filter_9_plus</i>
+						
+					</div>
+					<h2>filter_9_plus</h2>
+				</li>
+				<li title="filter_b_and_w">
+					<div class="icon-box">
+						
+						<!-- filter_b_and_w -->
+						<i class="svg-filter_b_and_w">filter_b_and_w</i>
+						
+					</div>
+					<h2>filter_b_and_w</h2>
+				</li>
+				<li title="filter_center_focus">
+					<div class="icon-box">
+						
+						<!-- filter_center_focus -->
+						<i class="svg-filter_center_focus">filter_center_focus</i>
+						
+					</div>
+					<h2>filter_center_focus</h2>
+				</li>
+				<li title="filter_drama">
+					<div class="icon-box">
+						
+						<!-- filter_drama -->
+						<i class="svg-filter_drama">filter_drama</i>
+						
+					</div>
+					<h2>filter_drama</h2>
+				</li>
+				<li title="filter_frames">
+					<div class="icon-box">
+						
+						<!-- filter_frames -->
+						<i class="svg-filter_frames">filter_frames</i>
+						
+					</div>
+					<h2>filter_frames</h2>
+				</li>
+				<li title="filter_hdr">
+					<div class="icon-box">
+						
+						<!-- filter_hdr -->
+						<i class="svg-filter_hdr">filter_hdr</i>
+						
+					</div>
+					<h2>filter_hdr</h2>
+				</li>
+				<li title="filter_none">
+					<div class="icon-box">
+						
+						<!-- filter_none -->
+						<i class="svg-filter_none">filter_none</i>
+						
+					</div>
+					<h2>filter_none</h2>
+				</li>
+				<li title="filter_tilt_shift">
+					<div class="icon-box">
+						
+						<!-- filter_tilt_shift -->
+						<i class="svg-filter_tilt_shift">filter_tilt_shift</i>
+						
+					</div>
+					<h2>filter_tilt_shift</h2>
+				</li>
+				<li title="filter_vintage">
+					<div class="icon-box">
+						
+						<!-- filter_vintage -->
+						<i class="svg-filter_vintage">filter_vintage</i>
+						
+					</div>
+					<h2>filter_vintage</h2>
+				</li>
+				<li title="flare">
+					<div class="icon-box">
+						
+						<!-- flare -->
+						<i class="svg-flare">flare</i>
+						
+					</div>
+					<h2>flare</h2>
+				</li>
+				<li title="flash_auto">
+					<div class="icon-box">
+						
+						<!-- flash_auto -->
+						<i class="svg-flash_auto">flash_auto</i>
+						
+					</div>
+					<h2>flash_auto</h2>
+				</li>
+				<li title="flash_off">
+					<div class="icon-box">
+						
+						<!-- flash_off -->
+						<i class="svg-flash_off">flash_off</i>
+						
+					</div>
+					<h2>flash_off</h2>
+				</li>
+				<li title="flash_on">
+					<div class="icon-box">
+						
+						<!-- flash_on -->
+						<i class="svg-flash_on">flash_on</i>
+						
+					</div>
+					<h2>flash_on</h2>
+				</li>
+				<li title="flip">
+					<div class="icon-box">
+						
+						<!-- flip -->
+						<i class="svg-flip">flip</i>
+						
+					</div>
+					<h2>flip</h2>
+				</li>
+				<li title="gradient">
+					<div class="icon-box">
+						
+						<!-- gradient -->
+						<i class="svg-gradient">gradient</i>
+						
+					</div>
+					<h2>gradient</h2>
+				</li>
+				<li title="grain">
+					<div class="icon-box">
+						
+						<!-- grain -->
+						<i class="svg-grain">grain</i>
+						
+					</div>
+					<h2>grain</h2>
+				</li>
+				<li title="grid_off">
+					<div class="icon-box">
+						
+						<!-- grid_off -->
+						<i class="svg-grid_off">grid_off</i>
+						
+					</div>
+					<h2>grid_off</h2>
+				</li>
+				<li title="grid_on">
+					<div class="icon-box">
+						
+						<!-- grid_on -->
+						<i class="svg-grid_on">grid_on</i>
+						
+					</div>
+					<h2>grid_on</h2>
+				</li>
+				<li title="hdr_off">
+					<div class="icon-box">
+						
+						<!-- hdr_off -->
+						<i class="svg-hdr_off">hdr_off</i>
+						
+					</div>
+					<h2>hdr_off</h2>
+				</li>
+				<li title="hdr_on">
+					<div class="icon-box">
+						
+						<!-- hdr_on -->
+						<i class="svg-hdr_on">hdr_on</i>
+						
+					</div>
+					<h2>hdr_on</h2>
+				</li>
+				<li title="hdr_strong">
+					<div class="icon-box">
+						
+						<!-- hdr_strong -->
+						<i class="svg-hdr_strong">hdr_strong</i>
+						
+					</div>
+					<h2>hdr_strong</h2>
+				</li>
+				<li title="hdr_weak">
+					<div class="icon-box">
+						
+						<!-- hdr_weak -->
+						<i class="svg-hdr_weak">hdr_weak</i>
+						
+					</div>
+					<h2>hdr_weak</h2>
+				</li>
+				<li title="healing">
+					<div class="icon-box">
+						
+						<!-- healing -->
+						<i class="svg-healing">healing</i>
+						
+					</div>
+					<h2>healing</h2>
+				</li>
+				<li title="image">
+					<div class="icon-box">
+						
+						<!-- image -->
+						<i class="svg-image">image</i>
+						
+					</div>
+					<h2>image</h2>
+				</li>
+				<li title="image_aspect_ratio">
+					<div class="icon-box">
+						
+						<!-- image_aspect_ratio -->
+						<i class="svg-image_aspect_ratio">image_aspect_ratio</i>
+						
+					</div>
+					<h2>image_aspect_ratio</h2>
+				</li>
+				<li title="iso">
+					<div class="icon-box">
+						
+						<!-- iso -->
+						<i class="svg-iso">iso</i>
+						
+					</div>
+					<h2>iso</h2>
+				</li>
+				<li title="landscape">
+					<div class="icon-box">
+						
+						<!-- landscape -->
+						<i class="svg-landscape">landscape</i>
+						
+					</div>
+					<h2>landscape</h2>
+				</li>
+				<li title="leak_add">
+					<div class="icon-box">
+						
+						<!-- leak_add -->
+						<i class="svg-leak_add">leak_add</i>
+						
+					</div>
+					<h2>leak_add</h2>
+				</li>
+				<li title="leak_remove">
+					<div class="icon-box">
+						
+						<!-- leak_remove -->
+						<i class="svg-leak_remove">leak_remove</i>
+						
+					</div>
+					<h2>leak_remove</h2>
+				</li>
+				<li title="lens">
+					<div class="icon-box">
+						
+						<!-- lens -->
+						<i class="svg-lens">lens</i>
+						
+					</div>
+					<h2>lens</h2>
+				</li>
+				<li title="linked_camera">
+					<div class="icon-box">
+						
+						<!-- linked_camera -->
+						<i class="svg-linked_camera">linked_camera</i>
+						
+					</div>
+					<h2>linked_camera</h2>
+				</li>
+				<li title="looks">
+					<div class="icon-box">
+						
+						<!-- looks -->
+						<i class="svg-looks">looks</i>
+						
+					</div>
+					<h2>looks</h2>
+				</li>
+				<li title="looks_3">
+					<div class="icon-box">
+						
+						<!-- looks_3 -->
+						<i class="svg-looks_3">looks_3</i>
+						
+					</div>
+					<h2>looks_3</h2>
+				</li>
+				<li title="looks_4">
+					<div class="icon-box">
+						
+						<!-- looks_4 -->
+						<i class="svg-looks_4">looks_4</i>
+						
+					</div>
+					<h2>looks_4</h2>
+				</li>
+				<li title="looks_5">
+					<div class="icon-box">
+						
+						<!-- looks_5 -->
+						<i class="svg-looks_5">looks_5</i>
+						
+					</div>
+					<h2>looks_5</h2>
+				</li>
+				<li title="looks_6">
+					<div class="icon-box">
+						
+						<!-- looks_6 -->
+						<i class="svg-looks_6">looks_6</i>
+						
+					</div>
+					<h2>looks_6</h2>
+				</li>
+				<li title="looks_one">
+					<div class="icon-box">
+						
+						<!-- looks_one -->
+						<i class="svg-looks_one">looks_one</i>
+						
+					</div>
+					<h2>looks_one</h2>
+				</li>
+				<li title="looks_two">
+					<div class="icon-box">
+						
+						<!-- looks_two -->
+						<i class="svg-looks_two">looks_two</i>
+						
+					</div>
+					<h2>looks_two</h2>
+				</li>
+				<li title="loupe">
+					<div class="icon-box">
+						
+						<!-- loupe -->
+						<i class="svg-loupe">loupe</i>
+						
+					</div>
+					<h2>loupe</h2>
+				</li>
+				<li title="monochrome_photos">
+					<div class="icon-box">
+						
+						<!-- monochrome_photos -->
+						<i class="svg-monochrome_photos">monochrome_photos</i>
+						
+					</div>
+					<h2>monochrome_photos</h2>
+				</li>
+				<li title="movie_creation">
+					<div class="icon-box">
+						
+						<!-- movie_creation -->
+						<i class="svg-movie_creation">movie_creation</i>
+						
+					</div>
+					<h2>movie_creation</h2>
+				</li>
+				<li title="movie_filter">
+					<div class="icon-box">
+						
+						<!-- movie_filter -->
+						<i class="svg-movie_filter">movie_filter</i>
+						
+					</div>
+					<h2>movie_filter</h2>
+				</li>
+				<li title="music_note">
+					<div class="icon-box">
+						
+						<!-- music_note -->
+						<i class="svg-music_note">music_note</i>
+						
+					</div>
+					<h2>music_note</h2>
+				</li>
+				<li title="nature">
+					<div class="icon-box">
+						
+						<!-- nature -->
+						<i class="svg-nature">nature</i>
+						
+					</div>
+					<h2>nature</h2>
+				</li>
+				<li title="nature_people">
+					<div class="icon-box">
+						
+						<!-- nature_people -->
+						<i class="svg-nature_people">nature_people</i>
+						
+					</div>
+					<h2>nature_people</h2>
+				</li>
+				<li title="navigate_before">
+					<div class="icon-box">
+						
+						<!-- navigate_before -->
+						<i class="svg-navigate_before">navigate_before</i>
+						
+					</div>
+					<h2>navigate_before</h2>
+				</li>
+				<li title="navigate_next">
+					<div class="icon-box">
+						
+						<!-- navigate_next -->
+						<i class="svg-navigate_next">navigate_next</i>
+						
+					</div>
+					<h2>navigate_next</h2>
+				</li>
+				<li title="palette">
+					<div class="icon-box">
+						
+						<!-- palette -->
+						<i class="svg-palette">palette</i>
+						
+					</div>
+					<h2>palette</h2>
+				</li>
+				<li title="panorama">
+					<div class="icon-box">
+						
+						<!-- panorama -->
+						<i class="svg-panorama">panorama</i>
+						
+					</div>
+					<h2>panorama</h2>
+				</li>
+				<li title="panorama_fish_eye">
+					<div class="icon-box">
+						
+						<!-- panorama_fish_eye -->
+						<i class="svg-panorama_fish_eye">panorama_fish_eye</i>
+						
+					</div>
+					<h2>panorama_fish_eye</h2>
+				</li>
+				<li title="panorama_horizontal">
+					<div class="icon-box">
+						
+						<!-- panorama_horizontal -->
+						<i class="svg-panorama_horizontal">panorama_horizontal</i>
+						
+					</div>
+					<h2>panorama_horizontal</h2>
+				</li>
+				<li title="panorama_vertical">
+					<div class="icon-box">
+						
+						<!-- panorama_vertical -->
+						<i class="svg-panorama_vertical">panorama_vertical</i>
+						
+					</div>
+					<h2>panorama_vertical</h2>
+				</li>
+				<li title="panorama_wide_angle">
+					<div class="icon-box">
+						
+						<!-- panorama_wide_angle -->
+						<i class="svg-panorama_wide_angle">panorama_wide_angle</i>
+						
+					</div>
+					<h2>panorama_wide_angle</h2>
+				</li>
+				<li title="photo">
+					<div class="icon-box">
+						
+						<!-- photo -->
+						<i class="svg-photo">photo</i>
+						
+					</div>
+					<h2>photo</h2>
+				</li>
+				<li title="photo_album">
+					<div class="icon-box">
+						
+						<!-- photo_album -->
+						<i class="svg-photo_album">photo_album</i>
+						
+					</div>
+					<h2>photo_album</h2>
+				</li>
+				<li title="photo_camera">
+					<div class="icon-box">
+						
+						<!-- photo_camera -->
+						<i class="svg-photo_camera">photo_camera</i>
+						
+					</div>
+					<h2>photo_camera</h2>
+				</li>
+				<li title="photo_filter">
+					<div class="icon-box">
+						
+						<!-- photo_filter -->
+						<i class="svg-photo_filter">photo_filter</i>
+						
+					</div>
+					<h2>photo_filter</h2>
+				</li>
+				<li title="photo_library">
+					<div class="icon-box">
+						
+						<!-- photo_library -->
+						<i class="svg-photo_library">photo_library</i>
+						
+					</div>
+					<h2>photo_library</h2>
+				</li>
+				<li title="photo_size_select_actual">
+					<div class="icon-box">
+						
+						<!-- photo_size_select_actual -->
+						<i class="svg-photo_size_select_actual">photo_size_select_actual</i>
+						
+					</div>
+					<h2>photo_size_select_actual</h2>
+				</li>
+				<li title="photo_size_select_large">
+					<div class="icon-box">
+						
+						<!-- photo_size_select_large -->
+						<i class="svg-photo_size_select_large">photo_size_select_large</i>
+						
+					</div>
+					<h2>photo_size_select_large</h2>
+				</li>
+				<li title="photo_size_select_small">
+					<div class="icon-box">
+						
+						<!-- photo_size_select_small -->
+						<i class="svg-photo_size_select_small">photo_size_select_small</i>
+						
+					</div>
+					<h2>photo_size_select_small</h2>
+				</li>
+				<li title="picture_as_pdf">
+					<div class="icon-box">
+						
+						<!-- picture_as_pdf -->
+						<i class="svg-picture_as_pdf">picture_as_pdf</i>
+						
+					</div>
+					<h2>picture_as_pdf</h2>
+				</li>
+				<li title="portrait">
+					<div class="icon-box">
+						
+						<!-- portrait -->
+						<i class="svg-portrait">portrait</i>
+						
+					</div>
+					<h2>portrait</h2>
+				</li>
+				<li title="remove_red_eye">
+					<div class="icon-box">
+						
+						<!-- remove_red_eye -->
+						<i class="svg-remove_red_eye">remove_red_eye</i>
+						
+					</div>
+					<h2>remove_red_eye</h2>
+				</li>
+				<li title="rotate_90_degrees_ccw">
+					<div class="icon-box">
+						
+						<!-- rotate_90_degrees_ccw -->
+						<i class="svg-rotate_90_degrees_ccw">rotate_90_degrees_ccw</i>
+						
+					</div>
+					<h2>rotate_90_degrees_ccw</h2>
+				</li>
+				<li title="rotate_left">
+					<div class="icon-box">
+						
+						<!-- rotate_left -->
+						<i class="svg-rotate_left">rotate_left</i>
+						
+					</div>
+					<h2>rotate_left</h2>
+				</li>
+				<li title="rotate_right">
+					<div class="icon-box">
+						
+						<!-- rotate_right -->
+						<i class="svg-rotate_right">rotate_right</i>
+						
+					</div>
+					<h2>rotate_right</h2>
+				</li>
+				<li title="slideshow">
+					<div class="icon-box">
+						
+						<!-- slideshow -->
+						<i class="svg-slideshow">slideshow</i>
+						
+					</div>
+					<h2>slideshow</h2>
+				</li>
+				<li title="straighten">
+					<div class="icon-box">
+						
+						<!-- straighten -->
+						<i class="svg-straighten">straighten</i>
+						
+					</div>
+					<h2>straighten</h2>
+				</li>
+				<li title="style">
+					<div class="icon-box">
+						
+						<!-- style -->
+						<i class="svg-style">style</i>
+						
+					</div>
+					<h2>style</h2>
+				</li>
+				<li title="switch_camera">
+					<div class="icon-box">
+						
+						<!-- switch_camera -->
+						<i class="svg-switch_camera">switch_camera</i>
+						
+					</div>
+					<h2>switch_camera</h2>
+				</li>
+				<li title="switch_video">
+					<div class="icon-box">
+						
+						<!-- switch_video -->
+						<i class="svg-switch_video">switch_video</i>
+						
+					</div>
+					<h2>switch_video</h2>
+				</li>
+				<li title="tag_faces">
+					<div class="icon-box">
+						
+						<!-- tag_faces -->
+						<i class="svg-tag_faces">tag_faces</i>
+						
+					</div>
+					<h2>tag_faces</h2>
+				</li>
+				<li title="texture">
+					<div class="icon-box">
+						
+						<!-- texture -->
+						<i class="svg-texture">texture</i>
+						
+					</div>
+					<h2>texture</h2>
+				</li>
+				<li title="timelapse">
+					<div class="icon-box">
+						
+						<!-- timelapse -->
+						<i class="svg-timelapse">timelapse</i>
+						
+					</div>
+					<h2>timelapse</h2>
+				</li>
+				<li title="timer">
+					<div class="icon-box">
+						
+						<!-- timer -->
+						<i class="svg-timer">timer</i>
+						
+					</div>
+					<h2>timer</h2>
+				</li>
+				<li title="timer_10">
+					<div class="icon-box">
+						
+						<!-- timer_10 -->
+						<i class="svg-timer_10">timer_10</i>
+						
+					</div>
+					<h2>timer_10</h2>
+				</li>
+				<li title="timer_3">
+					<div class="icon-box">
+						
+						<!-- timer_3 -->
+						<i class="svg-timer_3">timer_3</i>
+						
+					</div>
+					<h2>timer_3</h2>
+				</li>
+				<li title="timer_off">
+					<div class="icon-box">
+						
+						<!-- timer_off -->
+						<i class="svg-timer_off">timer_off</i>
+						
+					</div>
+					<h2>timer_off</h2>
+				</li>
+				<li title="tonality">
+					<div class="icon-box">
+						
+						<!-- tonality -->
+						<i class="svg-tonality">tonality</i>
+						
+					</div>
+					<h2>tonality</h2>
+				</li>
+				<li title="transform">
+					<div class="icon-box">
+						
+						<!-- transform -->
+						<i class="svg-transform">transform</i>
+						
+					</div>
+					<h2>transform</h2>
+				</li>
+				<li title="tune">
+					<div class="icon-box">
+						
+						<!-- tune -->
+						<i class="svg-tune">tune</i>
+						
+					</div>
+					<h2>tune</h2>
+				</li>
+				<li title="view_comfy">
+					<div class="icon-box">
+						
+						<!-- view_comfy -->
+						<i class="svg-view_comfy">view_comfy</i>
+						
+					</div>
+					<h2>view_comfy</h2>
+				</li>
+				<li title="view_compact">
+					<div class="icon-box">
+						
+						<!-- view_compact -->
+						<i class="svg-view_compact">view_compact</i>
+						
+					</div>
+					<h2>view_compact</h2>
+				</li>
+				<li title="vignette">
+					<div class="icon-box">
+						
+						<!-- vignette -->
+						<i class="svg-vignette">vignette</i>
+						
+					</div>
+					<h2>vignette</h2>
+				</li>
+				<li title="wb_auto">
+					<div class="icon-box">
+						
+						<!-- wb_auto -->
+						<i class="svg-wb_auto">wb_auto</i>
+						
+					</div>
+					<h2>wb_auto</h2>
+				</li>
+				<li title="wb_cloudy">
+					<div class="icon-box">
+						
+						<!-- wb_cloudy -->
+						<i class="svg-wb_cloudy">wb_cloudy</i>
+						
+					</div>
+					<h2>wb_cloudy</h2>
+				</li>
+				<li title="wb_incandescent">
+					<div class="icon-box">
+						
+						<!-- wb_incandescent -->
+						<i class="svg-wb_incandescent">wb_incandescent</i>
+						
+					</div>
+					<h2>wb_incandescent</h2>
+				</li>
+				<li title="wb_iridescent">
+					<div class="icon-box">
+						
+						<!-- wb_iridescent -->
+						<i class="svg-wb_iridescent">wb_iridescent</i>
+						
+					</div>
+					<h2>wb_iridescent</h2>
+				</li>
+				<li title="wb_sunny">
+					<div class="icon-box">
+						
+						<!-- wb_sunny -->
+						<i class="svg-wb_sunny">wb_sunny</i>
+						
+					</div>
+					<h2>wb_sunny</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sat, 30 Apr 2016 17:56:48 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

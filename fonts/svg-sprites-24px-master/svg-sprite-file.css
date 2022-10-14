@@ -1,0 +1,126 @@
+.svg-attachment {
+	background: url("svg-sprite-file.svg") 33.333333333333336% 0 no-repeat;
+}
+
+.svg-attachment-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud {
+	background: url("svg-sprite-file.svg") 33.333333333333336% 66.66666666666667% no-repeat;
+}
+
+.svg-cloud-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_circle {
+	background: url("svg-sprite-file.svg") 0 33.333333333333336% no-repeat;
+}
+
+.svg-cloud_circle-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_done {
+	background: url("svg-sprite-file.svg") 33.333333333333336% 33.333333333333336% no-repeat;
+}
+
+.svg-cloud_done-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_download {
+	background: url("svg-sprite-file.svg") 66.66666666666667% 0 no-repeat;
+}
+
+.svg-cloud_download-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_off {
+	background: url("svg-sprite-file.svg") 66.66666666666667% 33.333333333333336% no-repeat;
+}
+
+.svg-cloud_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_queue {
+	background: url("svg-sprite-file.svg") 0 66.66666666666667% no-repeat;
+}
+
+.svg-cloud_queue-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cloud_upload {
+	background: url("svg-sprite-file.svg") 0 0 no-repeat;
+}
+
+.svg-cloud_upload-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-create_new_folder {
+	background: url("svg-sprite-file.svg") 66.66666666666667% 66.66666666666667% no-repeat;
+}
+
+.svg-create_new_folder-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-file_download {
+	background: url("svg-sprite-file.svg") 100% 0 no-repeat;
+}
+
+.svg-file_download-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-file_upload {
+	background: url("svg-sprite-file.svg") 100% 33.333333333333336% no-repeat;
+}
+
+.svg-file_upload-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-folder {
+	background: url("svg-sprite-file.svg") 100% 66.66666666666667% no-repeat;
+}
+
+.svg-folder-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-folder_open {
+	background: url("svg-sprite-file.svg") 0 100% no-repeat;
+}
+
+.svg-folder_open-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-folder_shared {
+	background: url("svg-sprite-file.svg") 33.333333333333336% 100% no-repeat;
+}
+
+.svg-folder_shared-dims {
+	width: 24px;
+	height: 24px;
+}
+

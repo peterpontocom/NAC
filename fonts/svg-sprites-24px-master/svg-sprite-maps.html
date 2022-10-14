@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block}</style>
+		
+<!--
+	
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite. 
+
+-->
+
+<style type="text/css">
+.svg-add_location {
+	background: url("svg-sprite-maps.svg") 12.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-beenhere {
+	background: url("svg-sprite-maps.svg") 50% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions {
+	background: url("svg-sprite-maps.svg") 0 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_bike {
+	background: url("svg-sprite-maps.svg") 12.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_boat {
+	background: url("svg-sprite-maps.svg") 25% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_bus {
+	background: url("svg-sprite-maps.svg") 25% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_car {
+	background: url("svg-sprite-maps.svg") 0 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_railway {
+	background: url("svg-sprite-maps.svg") 12.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_run {
+	background: url("svg-sprite-maps.svg") 25% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_subway {
+	background: url("svg-sprite-maps.svg") 37.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_transit {
+	background: url("svg-sprite-maps.svg") 37.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-directions_walk {
+	background: url("svg-sprite-maps.svg") 37.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-edit_location {
+	background: url("svg-sprite-maps.svg") 0 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-ev_station {
+	background: url("svg-sprite-maps.svg") 12.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-flight {
+	background: url("svg-sprite-maps.svg") 25% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-hotel {
+	background: url("svg-sprite-maps.svg") 37.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-layers {
+	background: url("svg-sprite-maps.svg") 50% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-layers_clear {
+	background: url("svg-sprite-maps.svg") 50% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_activity {
+	background: url("svg-sprite-maps.svg") 50% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_airport {
+	background: url("svg-sprite-maps.svg") 50% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_atm {
+	background: url("svg-sprite-maps.svg") 0 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_bar {
+	background: url("svg-sprite-maps.svg") 12.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_cafe {
+	background: url("svg-sprite-maps.svg") 25% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_car_wash {
+	background: url("svg-sprite-maps.svg") 37.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_convenience_store {
+	background: url("svg-sprite-maps.svg") 50% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_dining {
+	background: url("svg-sprite-maps.svg") 62.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_drink {
+	background: url("svg-sprite-maps.svg") 62.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_florist {
+	background: url("svg-sprite-maps.svg") 62.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_gas_station {
+	background: url("svg-sprite-maps.svg") 62.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_grocery_store {
+	background: url("svg-sprite-maps.svg") 62.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_hospital {
+	background: url("svg-sprite-maps.svg") 0 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_hotel {
+	background: url("svg-sprite-maps.svg") 12.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_laundry_service {
+	background: url("svg-sprite-maps.svg") 25% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_library {
+	background: url("svg-sprite-maps.svg") 37.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_mall {
+	background: url("svg-sprite-maps.svg") 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_movies {
+	background: url("svg-sprite-maps.svg") 62.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_offer {
+	background: url("svg-sprite-maps.svg") 75% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_parking {
+	background: url("svg-sprite-maps.svg") 75% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_pharmacy {
+	background: url("svg-sprite-maps.svg") 75% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_phone {
+	background: url("svg-sprite-maps.svg") 75% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_pizza {
+	background: url("svg-sprite-maps.svg") 75% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_play {
+	background: url("svg-sprite-maps.svg") 75% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_post_office {
+	background: url("svg-sprite-maps.svg") 0 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_printshop {
+	background: url("svg-sprite-maps.svg") 12.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_see {
+	background: url("svg-sprite-maps.svg") 25% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_shipping {
+	background: url("svg-sprite-maps.svg") 37.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-local_taxi {
+	background: url("svg-sprite-maps.svg") 50% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-map {
+	background: url("svg-sprite-maps.svg") 62.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-my_location {
+	background: url("svg-sprite-maps.svg") 75% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-navigation {
+	background: url("svg-sprite-maps.svg") 87.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-near_me {
+	background: url("svg-sprite-maps.svg") 87.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-person_pin {
+	background: url("svg-sprite-maps.svg") 87.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-person_pin_circle {
+	background: url("svg-sprite-maps.svg") 87.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-pin_drop {
+	background: url("svg-sprite-maps.svg") 87.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-place {
+	background: url("svg-sprite-maps.svg") 87.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-rate_review {
+	background: url("svg-sprite-maps.svg") 87.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-restaurant {
+	background: url("svg-sprite-maps.svg") 0 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-restaurant_menu {
+	background: url("svg-sprite-maps.svg") 12.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-satellite {
+	background: url("svg-sprite-maps.svg") 25% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-store_mall_directory {
+	background: url("svg-sprite-maps.svg") 37.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-streetview {
+	background: url("svg-sprite-maps.svg") 50% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-subway {
+	background: url("svg-sprite-maps.svg") 62.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-terrain {
+	background: url("svg-sprite-maps.svg") 75% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-traffic {
+	background: url("svg-sprite-maps.svg") 87.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-train {
+	background: url("svg-sprite-maps.svg") 100% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-tram {
+	background: url("svg-sprite-maps.svg") 100% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-transfer_within_a_station {
+	background: url("svg-sprite-maps.svg") 100% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-zoom_out_map {
+	background: url("svg-sprite-maps.svg") 100% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+			
+<!--
+	
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				
+				<li title="add_location">
+					<div class="icon-box">
+						
+						<!-- add_location -->
+						<i class="svg-add_location">add_location</i>
+						
+					</div>
+					<h2>add_location</h2>
+				</li>
+				<li title="beenhere">
+					<div class="icon-box">
+						
+						<!-- beenhere -->
+						<i class="svg-beenhere">beenhere</i>
+						
+					</div>
+					<h2>beenhere</h2>
+				</li>
+				<li title="directions">
+					<div class="icon-box">
+						
+						<!-- directions -->
+						<i class="svg-directions">directions</i>
+						
+					</div>
+					<h2>directions</h2>
+				</li>
+				<li title="directions_bike">
+					<div class="icon-box">
+						
+						<!-- directions_bike -->
+						<i class="svg-directions_bike">directions_bike</i>
+						
+					</div>
+					<h2>directions_bike</h2>
+				</li>
+				<li title="directions_boat">
+					<div class="icon-box">
+						
+						<!-- directions_boat -->
+						<i class="svg-directions_boat">directions_boat</i>
+						
+					</div>
+					<h2>directions_boat</h2>
+				</li>
+				<li title="directions_bus">
+					<div class="icon-box">
+						
+						<!-- directions_bus -->
+						<i class="svg-directions_bus">directions_bus</i>
+						
+					</div>
+					<h2>directions_bus</h2>
+				</li>
+				<li title="directions_car">
+					<div class="icon-box">
+						
+						<!-- directions_car -->
+						<i class="svg-directions_car">directions_car</i>
+						
+					</div>
+					<h2>directions_car</h2>
+				</li>
+				<li title="directions_railway">
+					<div class="icon-box">
+						
+						<!-- directions_railway -->
+						<i class="svg-directions_railway">directions_railway</i>
+						
+					</div>
+					<h2>directions_railway</h2>
+				</li>
+				<li title="directions_run">
+					<div class="icon-box">
+						
+						<!-- directions_run -->
+						<i class="svg-directions_run">directions_run</i>
+						
+					</div>
+					<h2>directions_run</h2>
+				</li>
+				<li title="directions_subway">
+					<div class="icon-box">
+						
+						<!-- directions_subway -->
+						<i class="svg-directions_subway">directions_subway</i>
+						
+					</div>
+					<h2>directions_subway</h2>
+				</li>
+				<li title="directions_transit">
+					<div class="icon-box">
+						
+						<!-- directions_transit -->
+						<i class="svg-directions_transit">directions_transit</i>
+						
+					</div>
+					<h2>directions_transit</h2>
+				</li>
+				<li title="directions_walk">
+					<div class="icon-box">
+						
+						<!-- directions_walk -->
+						<i class="svg-directions_walk">directions_walk</i>
+						
+					</div>
+					<h2>directions_walk</h2>
+				</li>
+				<li title="edit_location">
+					<div class="icon-box">
+						
+						<!-- edit_location -->
+						<i class="svg-edit_location">edit_location</i>
+						
+					</div>
+					<h2>edit_location</h2>
+				</li>
+				<li title="ev_station">
+					<div class="icon-box">
+						
+						<!-- ev_station -->
+						<i class="svg-ev_station">ev_station</i>
+						
+					</div>
+					<h2>ev_station</h2>
+				</li>
+				<li title="flight">
+					<div class="icon-box">
+						
+						<!-- flight -->
+						<i class="svg-flight">flight</i>
+						
+					</div>
+					<h2>flight</h2>
+				</li>
+				<li title="hotel">
+					<div class="icon-box">
+						
+						<!-- hotel -->
+						<i class="svg-hotel">hotel</i>
+						
+					</div>
+					<h2>hotel</h2>
+				</li>
+				<li title="layers">
+					<div class="icon-box">
+						
+						<!-- layers -->
+						<i class="svg-layers">layers</i>
+						
+					</div>
+					<h2>layers</h2>
+				</li>
+				<li title="layers_clear">
+					<div class="icon-box">
+						
+						<!-- layers_clear -->
+						<i class="svg-layers_clear">layers_clear</i>
+						
+					</div>
+					<h2>layers_clear</h2>
+				</li>
+				<li title="local_activity">
+					<div class="icon-box">
+						
+						<!-- local_activity -->
+						<i class="svg-local_activity">local_activity</i>
+						
+					</div>
+					<h2>local_activity</h2>
+				</li>
+				<li title="local_airport">
+					<div class="icon-box">
+						
+						<!-- local_airport -->
+						<i class="svg-local_airport">local_airport</i>
+						
+					</div>
+					<h2>local_airport</h2>
+				</li>
+				<li title="local_atm">
+					<div class="icon-box">
+						
+						<!-- local_atm -->
+						<i class="svg-local_atm">local_atm</i>
+						
+					</div>
+					<h2>local_atm</h2>
+				</li>
+				<li title="local_bar">
+					<div class="icon-box">
+						
+						<!-- local_bar -->
+						<i class="svg-local_bar">local_bar</i>
+						
+					</div>
+					<h2>local_bar</h2>
+				</li>
+				<li title="local_cafe">
+					<div class="icon-box">
+						
+						<!-- local_cafe -->
+						<i class="svg-local_cafe">local_cafe</i>
+						
+					</div>
+					<h2>local_cafe</h2>
+				</li>
+				<li title="local_car_wash">
+					<div class="icon-box">
+						
+						<!-- local_car_wash -->
+						<i class="svg-local_car_wash">local_car_wash</i>
+						
+					</div>
+					<h2>local_car_wash</h2>
+				</li>
+				<li title="local_convenience_store">
+					<div class="icon-box">
+						
+						<!-- local_convenience_store -->
+						<i class="svg-local_convenience_store">local_convenience_store</i>
+						
+					</div>
+					<h2>local_convenience_store</h2>
+				</li>
+				<li title="local_dining">
+					<div class="icon-box">
+						
+						<!-- local_dining -->
+						<i class="svg-local_dining">local_dining</i>
+						
+					</div>
+					<h2>local_dining</h2>
+				</li>
+				<li title="local_drink">
+					<div class="icon-box">
+						
+						<!-- local_drink -->
+						<i class="svg-local_drink">local_drink</i>
+						
+					</div>
+					<h2>local_drink</h2>
+				</li>
+				<li title="local_florist">
+					<div class="icon-box">
+						
+						<!-- local_florist -->
+						<i class="svg-local_florist">local_florist</i>
+						
+					</div>
+					<h2>local_florist</h2>
+				</li>
+				<li title="local_gas_station">
+					<div class="icon-box">
+						
+						<!-- local_gas_station -->
+						<i class="svg-local_gas_station">local_gas_station</i>
+						
+					</div>
+					<h2>local_gas_station</h2>
+				</li>
+				<li title="local_grocery_store">
+					<div class="icon-box">
+						
+						<!-- local_grocery_store -->
+						<i class="svg-local_grocery_store">local_grocery_store</i>
+						
+					</div>
+					<h2>local_grocery_store</h2>
+				</li>
+				<li title="local_hospital">
+					<div class="icon-box">
+						
+						<!-- local_hospital -->
+						<i class="svg-local_hospital">local_hospital</i>
+						
+					</div>
+					<h2>local_hospital</h2>
+				</li>
+				<li title="local_hotel">
+					<div class="icon-box">
+						
+						<!-- local_hotel -->
+						<i class="svg-local_hotel">local_hotel</i>
+						
+					</div>
+					<h2>local_hotel</h2>
+				</li>
+				<li title="local_laundry_service">
+					<div class="icon-box">
+						
+						<!-- local_laundry_service -->
+						<i class="svg-local_laundry_service">local_laundry_service</i>
+						
+					</div>
+					<h2>local_laundry_service</h2>
+				</li>
+				<li title="local_library">
+					<div class="icon-box">
+						
+						<!-- local_library -->
+						<i class="svg-local_library">local_library</i>
+						
+					</div>
+					<h2>local_library</h2>
+				</li>
+				<li title="local_mall">
+					<div class="icon-box">
+						
+						<!-- local_mall -->
+						<i class="svg-local_mall">local_mall</i>
+						
+					</div>
+					<h2>local_mall</h2>
+				</li>
+				<li title="local_movies">
+					<div class="icon-box">
+						
+						<!-- local_movies -->
+						<i class="svg-local_movies">local_movies</i>
+						
+					</div>
+					<h2>local_movies</h2>
+				</li>
+				<li title="local_offer">
+					<div class="icon-box">
+						
+						<!-- local_offer -->
+						<i class="svg-local_offer">local_offer</i>
+						
+					</div>
+					<h2>local_offer</h2>
+				</li>
+				<li title="local_parking">
+					<div class="icon-box">
+						
+						<!-- local_parking -->
+						<i class="svg-local_parking">local_parking</i>
+						
+					</div>
+					<h2>local_parking</h2>
+				</li>
+				<li title="local_pharmacy">
+					<div class="icon-box">
+						
+						<!-- local_pharmacy -->
+						<i class="svg-local_pharmacy">local_pharmacy</i>
+						
+					</div>
+					<h2>local_pharmacy</h2>
+				</li>
+				<li title="local_phone">
+					<div class="icon-box">
+						
+						<!-- local_phone -->
+						<i class="svg-local_phone">local_phone</i>
+						
+					</div>
+					<h2>local_phone</h2>
+				</li>
+				<li title="local_pizza">
+					<div class="icon-box">
+						
+						<!-- local_pizza -->
+						<i class="svg-local_pizza">local_pizza</i>
+						
+					</div>
+					<h2>local_pizza</h2>
+				</li>
+				<li title="local_play">
+					<div class="icon-box">
+						
+						<!-- local_play -->
+						<i class="svg-local_play">local_play</i>
+						
+					</div>
+					<h2>local_play</h2>
+				</li>
+				<li title="local_post_office">
+					<div class="icon-box">
+						
+						<!-- local_post_office -->
+						<i class="svg-local_post_office">local_post_office</i>
+						
+					</div>
+					<h2>local_post_office</h2>
+				</li>
+				<li title="local_printshop">
+					<div class="icon-box">
+						
+						<!-- local_printshop -->
+						<i class="svg-local_printshop">local_printshop</i>
+						
+					</div>
+					<h2>local_printshop</h2>
+				</li>
+				<li title="local_see">
+					<div class="icon-box">
+						
+						<!-- local_see -->
+						<i class="svg-local_see">local_see</i>
+						
+					</div>
+					<h2>local_see</h2>
+				</li>
+				<li title="local_shipping">
+					<div class="icon-box">
+						
+						<!-- local_shipping -->
+						<i class="svg-local_shipping">local_shipping</i>
+						
+					</div>
+					<h2>local_shipping</h2>
+				</li>
+				<li title="local_taxi">
+					<div class="icon-box">
+						
+						<!-- local_taxi -->
+						<i class="svg-local_taxi">local_taxi</i>
+						
+					</div>
+					<h2>local_taxi</h2>
+				</li>
+				<li title="map">
+					<div class="icon-box">
+						
+						<!-- map -->
+						<i class="svg-map">map</i>
+						
+					</div>
+					<h2>map</h2>
+				</li>
+				<li title="my_location">
+					<div class="icon-box">
+						
+						<!-- my_location -->
+						<i class="svg-my_location">my_location</i>
+						
+					</div>
+					<h2>my_location</h2>
+				</li>
+				<li title="navigation">
+					<div class="icon-box">
+						
+						<!-- navigation -->
+						<i class="svg-navigation">navigation</i>
+						
+					</div>
+					<h2>navigation</h2>
+				</li>
+				<li title="near_me">
+					<div class="icon-box">
+						
+						<!-- near_me -->
+						<i class="svg-near_me">near_me</i>
+						
+					</div>
+					<h2>near_me</h2>
+				</li>
+				<li title="person_pin">
+					<div class="icon-box">
+						
+						<!-- person_pin -->
+						<i class="svg-person_pin">person_pin</i>
+						
+					</div>
+					<h2>person_pin</h2>
+				</li>
+				<li title="person_pin_circle">
+					<div class="icon-box">
+						
+						<!-- person_pin_circle -->
+						<i class="svg-person_pin_circle">person_pin_circle</i>
+						
+					</div>
+					<h2>person_pin_circle</h2>
+				</li>
+				<li title="pin_drop">
+					<div class="icon-box">
+						
+						<!-- pin_drop -->
+						<i class="svg-pin_drop">pin_drop</i>
+						
+					</div>
+					<h2>pin_drop</h2>
+				</li>
+				<li title="place">
+					<div class="icon-box">
+						
+						<!-- place -->
+						<i class="svg-place">place</i>
+						
+					</div>
+					<h2>place</h2>
+				</li>
+				<li title="rate_review">
+					<div class="icon-box">
+						
+						<!-- rate_review -->
+						<i class="svg-rate_review">rate_review</i>
+						
+					</div>
+					<h2>rate_review</h2>
+				</li>
+				<li title="restaurant">
+					<div class="icon-box">
+						
+						<!-- restaurant -->
+						<i class="svg-restaurant">restaurant</i>
+						
+					</div>
+					<h2>restaurant</h2>
+				</li>
+				<li title="restaurant_menu">
+					<div class="icon-box">
+						
+						<!-- restaurant_menu -->
+						<i class="svg-restaurant_menu">restaurant_menu</i>
+						
+					</div>
+					<h2>restaurant_menu</h2>
+				</li>
+				<li title="satellite">
+					<div class="icon-box">
+						
+						<!-- satellite -->
+						<i class="svg-satellite">satellite</i>
+						
+					</div>
+					<h2>satellite</h2>
+				</li>
+				<li title="store_mall_directory">
+					<div class="icon-box">
+						
+						<!-- store_mall_directory -->
+						<i class="svg-store_mall_directory">store_mall_directory</i>
+						
+					</div>
+					<h2>store_mall_directory</h2>
+				</li>
+				<li title="streetview">
+					<div class="icon-box">
+						
+						<!-- streetview -->
+						<i class="svg-streetview">streetview</i>
+						
+					</div>
+					<h2>streetview</h2>
+				</li>
+				<li title="subway">
+					<div class="icon-box">
+						
+						<!-- subway -->
+						<i class="svg-subway">subway</i>
+						
+					</div>
+					<h2>subway</h2>
+				</li>
+				<li title="terrain">
+					<div class="icon-box">
+						
+						<!-- terrain -->
+						<i class="svg-terrain">terrain</i>
+						
+					</div>
+					<h2>terrain</h2>
+				</li>
+				<li title="traffic">
+					<div class="icon-box">
+						
+						<!-- traffic -->
+						<i class="svg-traffic">traffic</i>
+						
+					</div>
+					<h2>traffic</h2>
+				</li>
+				<li title="train">
+					<div class="icon-box">
+						
+						<!-- train -->
+						<i class="svg-train">train</i>
+						
+					</div>
+					<h2>train</h2>
+				</li>
+				<li title="tram">
+					<div class="icon-box">
+						
+						<!-- tram -->
+						<i class="svg-tram">tram</i>
+						
+					</div>
+					<h2>tram</h2>
+				</li>
+				<li title="transfer_within_a_station">
+					<div class="icon-box">
+						
+						<!-- transfer_within_a_station -->
+						<i class="svg-transfer_within_a_station">transfer_within_a_station</i>
+						
+					</div>
+					<h2>transfer_within_a_station</h2>
+				</li>
+				<li title="zoom_out_map">
+					<div class="icon-box">
+						
+						<!-- zoom_out_map -->
+						<i class="svg-zoom_out_map">zoom_out_map</i>
+						
+					</div>
+					<h2>zoom_out_map</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sat, 30 Apr 2016 17:56:48 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

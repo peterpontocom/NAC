@@ -1,0 +1,36 @@
+.svg-add_alert {
+	background: url("svg-sprite-alert.svg") 0 0 no-repeat;
+}
+
+.svg-add_alert-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-error {
+	background: url("svg-sprite-alert.svg") 100% 0 no-repeat;
+}
+
+.svg-error-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-error_outline {
+	background: url("svg-sprite-alert.svg") 0 100% no-repeat;
+}
+
+.svg-error_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-warning {
+	background: url("svg-sprite-alert.svg") 100% 100% no-repeat;
+}
+
+.svg-warning-dims {
+	width: 24px;
+	height: 24px;
+}
+

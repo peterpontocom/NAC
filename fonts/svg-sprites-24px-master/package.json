@@ -1,0 +1,22 @@
+{
+  "name": "md-icons-svg-sprites-24px",
+  "version": "2.2.0",
+  "description": "24px SVG sprites for the Material Design icons by Google",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-design-icons/svg-sprites-24px"
+  },
+  "keywords": [
+    "icons",
+    "material",
+    "material-design",
+    "google"
+  ],
+  "author": "Rahul Gupta",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/google/material-design-icons/issues"
+  },
+  "homepage": "https://github.com/google/material-design-icons"
+}

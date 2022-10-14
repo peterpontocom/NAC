@@ -1,0 +1,450 @@
+.svg-business {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 0 no-repeat;
+}
+
+.svg-business-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 0 no-repeat;
+}
+
+.svg-call-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_end {
+	background: url("svg-sprite-communication.svg") 0 16.666666666666668% no-repeat;
+}
+
+.svg-call_end-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_made {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 16.666666666666668% no-repeat;
+}
+
+.svg-call_made-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_merge {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 0 no-repeat;
+}
+
+.svg-call_merge-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_missed {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 16.666666666666668% no-repeat;
+}
+
+.svg-call_missed-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_missed_outgoing {
+	background: url("svg-sprite-communication.svg") 0 33.333333333333336% no-repeat;
+}
+
+.svg-call_missed_outgoing-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_received {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 33.333333333333336% no-repeat;
+}
+
+.svg-call_received-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-call_split {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 33.333333333333336% no-repeat;
+}
+
+.svg-call_split-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chat {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 0 no-repeat;
+}
+
+.svg-chat-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chat_bubble {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 16.666666666666668% no-repeat;
+}
+
+.svg-chat_bubble-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chat_bubble_outline {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 33.333333333333336% no-repeat;
+}
+
+.svg-chat_bubble_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-clear_all {
+	background: url("svg-sprite-communication.svg") 0 50% no-repeat;
+}
+
+.svg-clear_all-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-comment {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 50% no-repeat;
+}
+
+.svg-comment-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-contact_mail {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 50% no-repeat;
+}
+
+.svg-contact_mail-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-contact_phone {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 50% no-repeat;
+}
+
+.svg-contact_phone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-contacts {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 0 no-repeat;
+}
+
+.svg-contacts-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-dialer_sip {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 16.666666666666668% no-repeat;
+}
+
+.svg-dialer_sip-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-dialpad {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 33.333333333333336% no-repeat;
+}
+
+.svg-dialpad-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-email {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 50% no-repeat;
+}
+
+.svg-email-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-forum {
+	background: url("svg-sprite-communication.svg") 0 66.66666666666667% no-repeat;
+}
+
+.svg-forum-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-import_contacts {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 66.66666666666667% no-repeat;
+}
+
+.svg-import_contacts-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-import_export {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 66.66666666666667% no-repeat;
+}
+
+.svg-import_export-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-invert_colors_off {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 66.66666666666667% no-repeat;
+}
+
+.svg-invert_colors_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-live_help {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 66.66666666666667% no-repeat;
+}
+
+.svg-live_help-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-location_off {
+	background: url("svg-sprite-communication.svg") 0 0 no-repeat;
+}
+
+.svg-location_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-location_on {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 16.666666666666668% no-repeat;
+}
+
+.svg-location_on-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mail_outline {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 33.333333333333336% no-repeat;
+}
+
+.svg-mail_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-message {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 50% no-repeat;
+}
+
+.svg-message-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-no_sim {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 66.66666666666667% no-repeat;
+}
+
+.svg-no_sim-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone {
+	background: url("svg-sprite-communication.svg") 0 83.33333333333333% no-repeat;
+}
+
+.svg-phone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink_erase {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink_erase-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink_lock {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink_lock-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink_ring {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink_ring-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink_setup {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink_setup-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-portable_wifi_off {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 83.33333333333333% no-repeat;
+}
+
+.svg-portable_wifi_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-present_to_all {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 0 no-repeat;
+}
+
+.svg-present_to_all-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-ring_volume {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 16.666666666666668% no-repeat;
+}
+
+.svg-ring_volume-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-rss_feed {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 33.333333333333336% no-repeat;
+}
+
+.svg-rss_feed-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-screen_share {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 50% no-repeat;
+}
+
+.svg-screen_share-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-speaker_phone {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 66.66666666666667% no-repeat;
+}
+
+.svg-speaker_phone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-stay_current_landscape {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 83.33333333333333% no-repeat;
+}
+
+.svg-stay_current_landscape-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-stay_current_portrait {
+	background: url("svg-sprite-communication.svg") 0 100% no-repeat;
+}
+
+.svg-stay_current_portrait-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-stay_primary_landscape {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 100% no-repeat;
+}
+
+.svg-stay_primary_landscape-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-stay_primary_portrait {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 100% no-repeat;
+}
+
+.svg-stay_primary_portrait-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-stop_screen_share {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 100% no-repeat;
+}
+
+.svg-stop_screen_share-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-swap_calls {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 100% no-repeat;
+}
+
+.svg-swap_calls-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-textsms {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 100% no-repeat;
+}
+
+.svg-textsms-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-voicemail {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 100% no-repeat;
+}
+
+.svg-voicemail-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-vpn_key {
+	background: url("svg-sprite-communication.svg") 100% 0 no-repeat;
+}
+
+.svg-vpn_key-dims {
+	width: 24px;
+	height: 24px;
+}
+

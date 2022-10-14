@@ -1,0 +1,369 @@
+.svg-add {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 0 no-repeat;
+}
+
+.svg-add-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-add_box {
+	background: url("svg-sprite-content.svg") 0 80% no-repeat;
+}
+
+.svg-add_box-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-add_circle {
+	background: url("svg-sprite-content.svg") 0 20% no-repeat;
+}
+
+.svg-add_circle-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-add_circle_outline {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 20% no-repeat;
+}
+
+.svg-add_circle_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-archive {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 0 no-repeat;
+}
+
+.svg-archive-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-backspace {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 20% no-repeat;
+}
+
+.svg-backspace-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-block {
+	background: url("svg-sprite-content.svg") 0 40% no-repeat;
+}
+
+.svg-block-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-clear {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 40% no-repeat;
+}
+
+.svg-clear-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-content_copy {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 40% no-repeat;
+}
+
+.svg-content_copy-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-content_cut {
+	background: url("svg-sprite-content.svg") 50% 0 no-repeat;
+}
+
+.svg-content_cut-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-content_paste {
+	background: url("svg-sprite-content.svg") 50% 20% no-repeat;
+}
+
+.svg-content_paste-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-create {
+	background: url("svg-sprite-content.svg") 50% 40% no-repeat;
+}
+
+.svg-create-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-delete_sweep {
+	background: url("svg-sprite-content.svg") 0 60% no-repeat;
+}
+
+.svg-delete_sweep-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-drafts {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 60% no-repeat;
+}
+
+.svg-drafts-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-filter_list {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 60% no-repeat;
+}
+
+.svg-filter_list-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-flag {
+	background: url("svg-sprite-content.svg") 50% 60% no-repeat;
+}
+
+.svg-flag-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-font_download {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 0 no-repeat;
+}
+
+.svg-font_download-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-forward {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 20% no-repeat;
+}
+
+.svg-forward-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-gesture {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 40% no-repeat;
+}
+
+.svg-gesture-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-inbox {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 60% no-repeat;
+}
+
+.svg-inbox-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-link {
+	background: url("svg-sprite-content.svg") 0 0 no-repeat;
+}
+
+.svg-link-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-low_priority {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 80% no-repeat;
+}
+
+.svg-low_priority-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mail {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 80% no-repeat;
+}
+
+.svg-mail-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-markunread {
+	background: url("svg-sprite-content.svg") 50% 80% no-repeat;
+}
+
+.svg-markunread-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-move_to_inbox {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 80% no-repeat;
+}
+
+.svg-move_to_inbox-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-next_week {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 0 no-repeat;
+}
+
+.svg-next_week-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-redo {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 20% no-repeat;
+}
+
+.svg-redo-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-remove {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 40% no-repeat;
+}
+
+.svg-remove-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-remove_circle {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 60% no-repeat;
+}
+
+.svg-remove_circle-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-remove_circle_outline {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 80% no-repeat;
+}
+
+.svg-remove_circle_outline-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-reply {
+	background: url("svg-sprite-content.svg") 0 100% no-repeat;
+}
+
+.svg-reply-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-reply_all {
+	background: url("svg-sprite-content.svg") 16.666666666666668% 100% no-repeat;
+}
+
+.svg-reply_all-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-report {
+	background: url("svg-sprite-content.svg") 33.333333333333336% 100% no-repeat;
+}
+
+.svg-report-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-save {
+	background: url("svg-sprite-content.svg") 50% 100% no-repeat;
+}
+
+.svg-save-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-select_all {
+	background: url("svg-sprite-content.svg") 66.66666666666667% 100% no-repeat;
+}
+
+.svg-select_all-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-send {
+	background: url("svg-sprite-content.svg") 83.33333333333333% 100% no-repeat;
+}
+
+.svg-send-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sort {
+	background: url("svg-sprite-content.svg") 100% 0 no-repeat;
+}
+
+.svg-sort-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-text_format {
+	background: url("svg-sprite-content.svg") 100% 20% no-repeat;
+}
+
+.svg-text_format-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-unarchive {
+	background: url("svg-sprite-content.svg") 100% 40% no-repeat;
+}
+
+.svg-unarchive-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-undo {
+	background: url("svg-sprite-content.svg") 100% 60% no-repeat;
+}
+
+.svg-undo-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-weekend {
+	background: url("svg-sprite-content.svg") 100% 80% no-repeat;
+}
+
+.svg-weekend-dims {
+	width: 24px;
+	height: 24px;
+}
+

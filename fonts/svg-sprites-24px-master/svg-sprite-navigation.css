@@ -1,0 +1,243 @@
+.svg-apps {
+	background: url("svg-sprite-navigation.svg") 20% 0 no-repeat;
+}
+
+.svg-apps-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_back {
+	background: url("svg-sprite-navigation.svg") 20% 75% no-repeat;
+}
+
+.svg-arrow_back-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_downward {
+	background: url("svg-sprite-navigation.svg") 0 25% no-repeat;
+}
+
+.svg-arrow_downward-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_drop_down {
+	background: url("svg-sprite-navigation.svg") 20% 25% no-repeat;
+}
+
+.svg-arrow_drop_down-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_drop_down_circle {
+	background: url("svg-sprite-navigation.svg") 40% 0 no-repeat;
+}
+
+.svg-arrow_drop_down_circle-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_drop_up {
+	background: url("svg-sprite-navigation.svg") 40% 25% no-repeat;
+}
+
+.svg-arrow_drop_up-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_forward {
+	background: url("svg-sprite-navigation.svg") 0 50% no-repeat;
+}
+
+.svg-arrow_forward-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-arrow_upward {
+	background: url("svg-sprite-navigation.svg") 20% 50% no-repeat;
+}
+
+.svg-arrow_upward-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cancel {
+	background: url("svg-sprite-navigation.svg") 40% 50% no-repeat;
+}
+
+.svg-cancel-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-check {
+	background: url("svg-sprite-navigation.svg") 60% 0 no-repeat;
+}
+
+.svg-check-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chevron_left {
+	background: url("svg-sprite-navigation.svg") 60% 25% no-repeat;
+}
+
+.svg-chevron_left-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chevron_right {
+	background: url("svg-sprite-navigation.svg") 60% 50% no-repeat;
+}
+
+.svg-chevron_right-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-close {
+	background: url("svg-sprite-navigation.svg") 0 75% no-repeat;
+}
+
+.svg-close-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-expand_less {
+	background: url("svg-sprite-navigation.svg") 0 0 no-repeat;
+}
+
+.svg-expand_less-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-expand_more {
+	background: url("svg-sprite-navigation.svg") 40% 75% no-repeat;
+}
+
+.svg-expand_more-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-first_page {
+	background: url("svg-sprite-navigation.svg") 60% 75% no-repeat;
+}
+
+.svg-first_page-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-fullscreen {
+	background: url("svg-sprite-navigation.svg") 80% 0 no-repeat;
+}
+
+.svg-fullscreen-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-fullscreen_exit {
+	background: url("svg-sprite-navigation.svg") 80% 25% no-repeat;
+}
+
+.svg-fullscreen_exit-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-last_page {
+	background: url("svg-sprite-navigation.svg") 80% 50% no-repeat;
+}
+
+.svg-last_page-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-menu {
+	background: url("svg-sprite-navigation.svg") 80% 75% no-repeat;
+}
+
+.svg-menu-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-more_horiz {
+	background: url("svg-sprite-navigation.svg") 0 100% no-repeat;
+}
+
+.svg-more_horiz-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-more_vert {
+	background: url("svg-sprite-navigation.svg") 20% 100% no-repeat;
+}
+
+.svg-more_vert-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-refresh {
+	background: url("svg-sprite-navigation.svg") 40% 100% no-repeat;
+}
+
+.svg-refresh-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-subdirectory_arrow_left {
+	background: url("svg-sprite-navigation.svg") 60% 100% no-repeat;
+}
+
+.svg-subdirectory_arrow_left-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-subdirectory_arrow_right {
+	background: url("svg-sprite-navigation.svg") 80% 100% no-repeat;
+}
+
+.svg-subdirectory_arrow_right-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-unfold_less {
+	background: url("svg-sprite-navigation.svg") 100% 0 no-repeat;
+}
+
+.svg-unfold_less-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-unfold_more {
+	background: url("svg-sprite-navigation.svg") 100% 25% no-repeat;
+}
+
+.svg-unfold_more-dims {
+	width: 24px;
+	height: 24px;
+}
+

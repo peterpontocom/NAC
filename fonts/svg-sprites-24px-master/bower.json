@@ -1,0 +1,17 @@
+{
+  "name": "md-icons-svg-sprites-24px",
+  "author": "Rahul Gupta",
+  "description": "24px SVG Sprites Sheets for the Material Design icons by Google",
+  "keywords": [
+    "icons",
+    "material",
+    "material-design",
+    "google"
+  ],
+  "ignore": [
+    "*.html",
+    "*.css"
+  ],
+  "license": "CC-BY-4.0",
+  "homepage": "http://google.com/design/spec"
+}

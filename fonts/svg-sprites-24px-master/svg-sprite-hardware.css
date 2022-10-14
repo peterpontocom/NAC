@@ -1,0 +1,432 @@
+.svg-cast {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 0 no-repeat;
+}
+
+.svg-cast-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-cast_connected {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 66.66666666666667% no-repeat;
+}
+
+.svg-cast_connected-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-computer {
+	background: url("svg-sprite-hardware.svg") 0 16.666666666666668% no-repeat;
+}
+
+.svg-computer-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-desktop_mac {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 16.666666666666668% no-repeat;
+}
+
+.svg-desktop_mac-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-desktop_windows {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 0 no-repeat;
+}
+
+.svg-desktop_windows-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-developer_board {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 16.666666666666668% no-repeat;
+}
+
+.svg-developer_board-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-device_hub {
+	background: url("svg-sprite-hardware.svg") 0 33.333333333333336% no-repeat;
+}
+
+.svg-device_hub-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-devices_other {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 33.333333333333336% no-repeat;
+}
+
+.svg-devices_other-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-dock {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 33.333333333333336% no-repeat;
+}
+
+.svg-dock-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-gamepad {
+	background: url("svg-sprite-hardware.svg") 50% 0 no-repeat;
+}
+
+.svg-gamepad-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-headset {
+	background: url("svg-sprite-hardware.svg") 50% 16.666666666666668% no-repeat;
+}
+
+.svg-headset-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-headset_mic {
+	background: url("svg-sprite-hardware.svg") 50% 33.333333333333336% no-repeat;
+}
+
+.svg-headset_mic-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard {
+	background: url("svg-sprite-hardware.svg") 0 50% no-repeat;
+}
+
+.svg-keyboard-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_arrow_down {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 50% no-repeat;
+}
+
+.svg-keyboard_arrow_down-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_arrow_left {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 50% no-repeat;
+}
+
+.svg-keyboard_arrow_left-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_arrow_right {
+	background: url("svg-sprite-hardware.svg") 50% 50% no-repeat;
+}
+
+.svg-keyboard_arrow_right-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_arrow_up {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 0 no-repeat;
+}
+
+.svg-keyboard_arrow_up-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_backspace {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 16.666666666666668% no-repeat;
+}
+
+.svg-keyboard_backspace-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_capslock {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 33.333333333333336% no-repeat;
+}
+
+.svg-keyboard_capslock-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_hide {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 50% no-repeat;
+}
+
+.svg-keyboard_hide-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_return {
+	background: url("svg-sprite-hardware.svg") 0 66.66666666666667% no-repeat;
+}
+
+.svg-keyboard_return-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_tab {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 66.66666666666667% no-repeat;
+}
+
+.svg-keyboard_tab-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-keyboard_voice {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 66.66666666666667% no-repeat;
+}
+
+.svg-keyboard_voice-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-laptop {
+	background: url("svg-sprite-hardware.svg") 50% 66.66666666666667% no-repeat;
+}
+
+.svg-laptop-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-laptop_chromebook {
+	background: url("svg-sprite-hardware.svg") 0 0 no-repeat;
+}
+
+.svg-laptop_chromebook-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-laptop_mac {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 0 no-repeat;
+}
+
+.svg-laptop_mac-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-laptop_windows {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 16.666666666666668% no-repeat;
+}
+
+.svg-laptop_windows-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-memory {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 33.333333333333336% no-repeat;
+}
+
+.svg-memory-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-mouse {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 50% no-repeat;
+}
+
+.svg-mouse-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_android {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 66.66666666666667% no-repeat;
+}
+
+.svg-phone_android-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phone_iphone {
+	background: url("svg-sprite-hardware.svg") 0 83.33333333333333% no-repeat;
+}
+
+.svg-phone_iphone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-phonelink_off {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 83.33333333333333% no-repeat;
+}
+
+.svg-phonelink_off-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-power_input {
+	background: url("svg-sprite-hardware.svg") 50% 83.33333333333333% no-repeat;
+}
+
+.svg-power_input-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-router {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 83.33333333333333% no-repeat;
+}
+
+.svg-router-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-scanner {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 83.33333333333333% no-repeat;
+}
+
+.svg-scanner-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-security {
+	background: url("svg-sprite-hardware.svg") 100% 0 no-repeat;
+}
+
+.svg-security-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-sim_card {
+	background: url("svg-sprite-hardware.svg") 100% 16.666666666666668% no-repeat;
+}
+
+.svg-sim_card-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-smartphone {
+	background: url("svg-sprite-hardware.svg") 100% 33.333333333333336% no-repeat;
+}
+
+.svg-smartphone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-speaker {
+	background: url("svg-sprite-hardware.svg") 100% 50% no-repeat;
+}
+
+.svg-speaker-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-speaker_group {
+	background: url("svg-sprite-hardware.svg") 100% 66.66666666666667% no-repeat;
+}
+
+.svg-speaker_group-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tablet {
+	background: url("svg-sprite-hardware.svg") 100% 83.33333333333333% no-repeat;
+}
+
+.svg-tablet-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tablet_android {
+	background: url("svg-sprite-hardware.svg") 0 100% no-repeat;
+}
+
+.svg-tablet_android-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tablet_mac {
+	background: url("svg-sprite-hardware.svg") 16.666666666666668% 100% no-repeat;
+}
+
+.svg-tablet_mac-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-toys {
+	background: url("svg-sprite-hardware.svg") 33.333333333333336% 100% no-repeat;
+}
+
+.svg-toys-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tv {
+	background: url("svg-sprite-hardware.svg") 50% 100% no-repeat;
+}
+
+.svg-tv-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-videogame_asset {
+	background: url("svg-sprite-hardware.svg") 66.66666666666667% 100% no-repeat;
+}
+
+.svg-videogame_asset-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-watch {
+	background: url("svg-sprite-hardware.svg") 83.33333333333333% 100% no-repeat;
+}
+
+.svg-watch-dims {
+	width: 24px;
+	height: 24px;
+}
+

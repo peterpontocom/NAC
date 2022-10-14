@@ -1,0 +1,612 @@
+.svg-add_location {
+	background: url("svg-sprite-maps.svg") 12.5% 0 no-repeat;
+}
+
+.svg-add_location-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-beenhere {
+	background: url("svg-sprite-maps.svg") 50% 71.42857142857143% no-repeat;
+}
+
+.svg-beenhere-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions {
+	background: url("svg-sprite-maps.svg") 0 14.285714285714286% no-repeat;
+}
+
+.svg-directions-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_bike {
+	background: url("svg-sprite-maps.svg") 12.5% 14.285714285714286% no-repeat;
+}
+
+.svg-directions_bike-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_boat {
+	background: url("svg-sprite-maps.svg") 25% 0 no-repeat;
+}
+
+.svg-directions_boat-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_bus {
+	background: url("svg-sprite-maps.svg") 25% 14.285714285714286% no-repeat;
+}
+
+.svg-directions_bus-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_car {
+	background: url("svg-sprite-maps.svg") 0 28.571428571428573% no-repeat;
+}
+
+.svg-directions_car-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_railway {
+	background: url("svg-sprite-maps.svg") 12.5% 28.571428571428573% no-repeat;
+}
+
+.svg-directions_railway-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_run {
+	background: url("svg-sprite-maps.svg") 25% 28.571428571428573% no-repeat;
+}
+
+.svg-directions_run-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_subway {
+	background: url("svg-sprite-maps.svg") 37.5% 0 no-repeat;
+}
+
+.svg-directions_subway-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_transit {
+	background: url("svg-sprite-maps.svg") 37.5% 14.285714285714286% no-repeat;
+}
+
+.svg-directions_transit-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-directions_walk {
+	background: url("svg-sprite-maps.svg") 37.5% 28.571428571428573% no-repeat;
+}
+
+.svg-directions_walk-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-edit_location {
+	background: url("svg-sprite-maps.svg") 0 42.857142857142854% no-repeat;
+}
+
+.svg-edit_location-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-ev_station {
+	background: url("svg-sprite-maps.svg") 12.5% 42.857142857142854% no-repeat;
+}
+
+.svg-ev_station-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-flight {
+	background: url("svg-sprite-maps.svg") 25% 42.857142857142854% no-repeat;
+}
+
+.svg-flight-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-hotel {
+	background: url("svg-sprite-maps.svg") 37.5% 42.857142857142854% no-repeat;
+}
+
+.svg-hotel-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-layers {
+	background: url("svg-sprite-maps.svg") 50% 0 no-repeat;
+}
+
+.svg-layers-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-layers_clear {
+	background: url("svg-sprite-maps.svg") 50% 14.285714285714286% no-repeat;
+}
+
+.svg-layers_clear-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_activity {
+	background: url("svg-sprite-maps.svg") 50% 28.571428571428573% no-repeat;
+}
+
+.svg-local_activity-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_airport {
+	background: url("svg-sprite-maps.svg") 50% 42.857142857142854% no-repeat;
+}
+
+.svg-local_airport-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_atm {
+	background: url("svg-sprite-maps.svg") 0 57.142857142857146% no-repeat;
+}
+
+.svg-local_atm-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_bar {
+	background: url("svg-sprite-maps.svg") 12.5% 57.142857142857146% no-repeat;
+}
+
+.svg-local_bar-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_cafe {
+	background: url("svg-sprite-maps.svg") 25% 57.142857142857146% no-repeat;
+}
+
+.svg-local_cafe-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_car_wash {
+	background: url("svg-sprite-maps.svg") 37.5% 57.142857142857146% no-repeat;
+}
+
+.svg-local_car_wash-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_convenience_store {
+	background: url("svg-sprite-maps.svg") 50% 57.142857142857146% no-repeat;
+}
+
+.svg-local_convenience_store-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_dining {
+	background: url("svg-sprite-maps.svg") 62.5% 0 no-repeat;
+}
+
+.svg-local_dining-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_drink {
+	background: url("svg-sprite-maps.svg") 62.5% 14.285714285714286% no-repeat;
+}
+
+.svg-local_drink-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_florist {
+	background: url("svg-sprite-maps.svg") 62.5% 28.571428571428573% no-repeat;
+}
+
+.svg-local_florist-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_gas_station {
+	background: url("svg-sprite-maps.svg") 62.5% 42.857142857142854% no-repeat;
+}
+
+.svg-local_gas_station-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_grocery_store {
+	background: url("svg-sprite-maps.svg") 62.5% 57.142857142857146% no-repeat;
+}
+
+.svg-local_grocery_store-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_hospital {
+	background: url("svg-sprite-maps.svg") 0 71.42857142857143% no-repeat;
+}
+
+.svg-local_hospital-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_hotel {
+	background: url("svg-sprite-maps.svg") 12.5% 71.42857142857143% no-repeat;
+}
+
+.svg-local_hotel-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_laundry_service {
+	background: url("svg-sprite-maps.svg") 25% 71.42857142857143% no-repeat;
+}
+
+.svg-local_laundry_service-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_library {
+	background: url("svg-sprite-maps.svg") 37.5% 71.42857142857143% no-repeat;
+}
+
+.svg-local_library-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_mall {
+	background: url("svg-sprite-maps.svg") 0 0 no-repeat;
+}
+
+.svg-local_mall-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_movies {
+	background: url("svg-sprite-maps.svg") 62.5% 71.42857142857143% no-repeat;
+}
+
+.svg-local_movies-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_offer {
+	background: url("svg-sprite-maps.svg") 75% 0 no-repeat;
+}
+
+.svg-local_offer-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_parking {
+	background: url("svg-sprite-maps.svg") 75% 14.285714285714286% no-repeat;
+}
+
+.svg-local_parking-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_pharmacy {
+	background: url("svg-sprite-maps.svg") 75% 28.571428571428573% no-repeat;
+}
+
+.svg-local_pharmacy-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_phone {
+	background: url("svg-sprite-maps.svg") 75% 42.857142857142854% no-repeat;
+}
+
+.svg-local_phone-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_pizza {
+	background: url("svg-sprite-maps.svg") 75% 57.142857142857146% no-repeat;
+}
+
+.svg-local_pizza-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_play {
+	background: url("svg-sprite-maps.svg") 75% 71.42857142857143% no-repeat;
+}
+
+.svg-local_play-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_post_office {
+	background: url("svg-sprite-maps.svg") 0 85.71428571428571% no-repeat;
+}
+
+.svg-local_post_office-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_printshop {
+	background: url("svg-sprite-maps.svg") 12.5% 85.71428571428571% no-repeat;
+}
+
+.svg-local_printshop-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_see {
+	background: url("svg-sprite-maps.svg") 25% 85.71428571428571% no-repeat;
+}
+
+.svg-local_see-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_shipping {
+	background: url("svg-sprite-maps.svg") 37.5% 85.71428571428571% no-repeat;
+}
+
+.svg-local_shipping-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-local_taxi {
+	background: url("svg-sprite-maps.svg") 50% 85.71428571428571% no-repeat;
+}
+
+.svg-local_taxi-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-map {
+	background: url("svg-sprite-maps.svg") 62.5% 85.71428571428571% no-repeat;
+}
+
+.svg-map-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-my_location {
+	background: url("svg-sprite-maps.svg") 75% 85.71428571428571% no-repeat;
+}
+
+.svg-my_location-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-navigation {
+	background: url("svg-sprite-maps.svg") 87.5% 0 no-repeat;
+}
+
+.svg-navigation-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-near_me {
+	background: url("svg-sprite-maps.svg") 87.5% 14.285714285714286% no-repeat;
+}
+
+.svg-near_me-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-person_pin {
+	background: url("svg-sprite-maps.svg") 87.5% 28.571428571428573% no-repeat;
+}
+
+.svg-person_pin-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-person_pin_circle {
+	background: url("svg-sprite-maps.svg") 87.5% 42.857142857142854% no-repeat;
+}
+
+.svg-person_pin_circle-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-pin_drop {
+	background: url("svg-sprite-maps.svg") 87.5% 57.142857142857146% no-repeat;
+}
+
+.svg-pin_drop-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-place {
+	background: url("svg-sprite-maps.svg") 87.5% 71.42857142857143% no-repeat;
+}
+
+.svg-place-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-rate_review {
+	background: url("svg-sprite-maps.svg") 87.5% 85.71428571428571% no-repeat;
+}
+
+.svg-rate_review-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-restaurant {
+	background: url("svg-sprite-maps.svg") 0 100% no-repeat;
+}
+
+.svg-restaurant-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-restaurant_menu {
+	background: url("svg-sprite-maps.svg") 12.5% 100% no-repeat;
+}
+
+.svg-restaurant_menu-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-satellite {
+	background: url("svg-sprite-maps.svg") 25% 100% no-repeat;
+}
+
+.svg-satellite-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-store_mall_directory {
+	background: url("svg-sprite-maps.svg") 37.5% 100% no-repeat;
+}
+
+.svg-store_mall_directory-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-streetview {
+	background: url("svg-sprite-maps.svg") 50% 100% no-repeat;
+}
+
+.svg-streetview-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-subway {
+	background: url("svg-sprite-maps.svg") 62.5% 100% no-repeat;
+}
+
+.svg-subway-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-terrain {
+	background: url("svg-sprite-maps.svg") 75% 100% no-repeat;
+}
+
+.svg-terrain-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-traffic {
+	background: url("svg-sprite-maps.svg") 87.5% 100% no-repeat;
+}
+
+.svg-traffic-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-train {
+	background: url("svg-sprite-maps.svg") 100% 0 no-repeat;
+}
+
+.svg-train-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-tram {
+	background: url("svg-sprite-maps.svg") 100% 14.285714285714286% no-repeat;
+}
+
+.svg-tram-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-transfer_within_a_station {
+	background: url("svg-sprite-maps.svg") 100% 28.571428571428573% no-repeat;
+}
+
+.svg-transfer_within_a_station-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-zoom_out_map {
+	background: url("svg-sprite-maps.svg") 100% 42.857142857142854% no-repeat;
+}
+
+.svg-zoom_out_map-dims {
+	width: 24px;
+	height: 24px;
+}
+

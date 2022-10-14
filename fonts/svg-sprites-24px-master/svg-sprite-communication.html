@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block}</style>
+		
+<!--
+	
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite. 
+
+-->
+
+<style type="text/css">
+.svg-business {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_end {
+	background: url("svg-sprite-communication.svg") 0 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_made {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_merge {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_missed {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_missed_outgoing {
+	background: url("svg-sprite-communication.svg") 0 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_received {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-call_split {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-chat {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-chat_bubble {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-chat_bubble_outline {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-clear_all {
+	background: url("svg-sprite-communication.svg") 0 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-comment {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-contact_mail {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-contact_phone {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-contacts {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-dialer_sip {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-dialpad {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-email {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-forum {
+	background: url("svg-sprite-communication.svg") 0 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-import_contacts {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-import_export {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-invert_colors_off {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-live_help {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-location_off {
+	background: url("svg-sprite-communication.svg") 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-location_on {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-mail_outline {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-message {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-no_sim {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-phone {
+	background: url("svg-sprite-communication.svg") 0 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-phonelink_erase {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-phonelink_lock {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-phonelink_ring {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-phonelink_setup {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-portable_wifi_off {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-present_to_all {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-ring_volume {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 16.666666666666668% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-rss_feed {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 33.333333333333336% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-screen_share {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-speaker_phone {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 66.66666666666667% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-stay_current_landscape {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 83.33333333333333% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-stay_current_portrait {
+	background: url("svg-sprite-communication.svg") 0 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-stay_primary_landscape {
+	background: url("svg-sprite-communication.svg") 14.285714285714286% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-stay_primary_portrait {
+	background: url("svg-sprite-communication.svg") 28.571428571428573% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-stop_screen_share {
+	background: url("svg-sprite-communication.svg") 42.857142857142854% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-swap_calls {
+	background: url("svg-sprite-communication.svg") 57.142857142857146% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-textsms {
+	background: url("svg-sprite-communication.svg") 71.42857142857143% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-voicemail {
+	background: url("svg-sprite-communication.svg") 85.71428571428571% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-vpn_key {
+	background: url("svg-sprite-communication.svg") 100% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+			
+<!--
+	
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				
+				<li title="business">
+					<div class="icon-box">
+						
+						<!-- business -->
+						<i class="svg-business">business</i>
+						
+					</div>
+					<h2>business</h2>
+				</li>
+				<li title="call">
+					<div class="icon-box">
+						
+						<!-- call -->
+						<i class="svg-call">call</i>
+						
+					</div>
+					<h2>call</h2>
+				</li>
+				<li title="call_end">
+					<div class="icon-box">
+						
+						<!-- call_end -->
+						<i class="svg-call_end">call_end</i>
+						
+					</div>
+					<h2>call_end</h2>
+				</li>
+				<li title="call_made">
+					<div class="icon-box">
+						
+						<!-- call_made -->
+						<i class="svg-call_made">call_made</i>
+						
+					</div>
+					<h2>call_made</h2>
+				</li>
+				<li title="call_merge">
+					<div class="icon-box">
+						
+						<!-- call_merge -->
+						<i class="svg-call_merge">call_merge</i>
+						
+					</div>
+					<h2>call_merge</h2>
+				</li>
+				<li title="call_missed">
+					<div class="icon-box">
+						
+						<!-- call_missed -->
+						<i class="svg-call_missed">call_missed</i>
+						
+					</div>
+					<h2>call_missed</h2>
+				</li>
+				<li title="call_missed_outgoing">
+					<div class="icon-box">
+						
+						<!-- call_missed_outgoing -->
+						<i class="svg-call_missed_outgoing">call_missed_outgoing</i>
+						
+					</div>
+					<h2>call_missed_outgoing</h2>
+				</li>
+				<li title="call_received">
+					<div class="icon-box">
+						
+						<!-- call_received -->
+						<i class="svg-call_received">call_received</i>
+						
+					</div>
+					<h2>call_received</h2>
+				</li>
+				<li title="call_split">
+					<div class="icon-box">
+						
+						<!-- call_split -->
+						<i class="svg-call_split">call_split</i>
+						
+					</div>
+					<h2>call_split</h2>
+				</li>
+				<li title="chat">
+					<div class="icon-box">
+						
+						<!-- chat -->
+						<i class="svg-chat">chat</i>
+						
+					</div>
+					<h2>chat</h2>
+				</li>
+				<li title="chat_bubble">
+					<div class="icon-box">
+						
+						<!-- chat_bubble -->
+						<i class="svg-chat_bubble">chat_bubble</i>
+						
+					</div>
+					<h2>chat_bubble</h2>
+				</li>
+				<li title="chat_bubble_outline">
+					<div class="icon-box">
+						
+						<!-- chat_bubble_outline -->
+						<i class="svg-chat_bubble_outline">chat_bubble_outline</i>
+						
+					</div>
+					<h2>chat_bubble_outline</h2>
+				</li>
+				<li title="clear_all">
+					<div class="icon-box">
+						
+						<!-- clear_all -->
+						<i class="svg-clear_all">clear_all</i>
+						
+					</div>
+					<h2>clear_all</h2>
+				</li>
+				<li title="comment">
+					<div class="icon-box">
+						
+						<!-- comment -->
+						<i class="svg-comment">comment</i>
+						
+					</div>
+					<h2>comment</h2>
+				</li>
+				<li title="contact_mail">
+					<div class="icon-box">
+						
+						<!-- contact_mail -->
+						<i class="svg-contact_mail">contact_mail</i>
+						
+					</div>
+					<h2>contact_mail</h2>
+				</li>
+				<li title="contact_phone">
+					<div class="icon-box">
+						
+						<!-- contact_phone -->
+						<i class="svg-contact_phone">contact_phone</i>
+						
+					</div>
+					<h2>contact_phone</h2>
+				</li>
+				<li title="contacts">
+					<div class="icon-box">
+						
+						<!-- contacts -->
+						<i class="svg-contacts">contacts</i>
+						
+					</div>
+					<h2>contacts</h2>
+				</li>
+				<li title="dialer_sip">
+					<div class="icon-box">
+						
+						<!-- dialer_sip -->
+						<i class="svg-dialer_sip">dialer_sip</i>
+						
+					</div>
+					<h2>dialer_sip</h2>
+				</li>
+				<li title="dialpad">
+					<div class="icon-box">
+						
+						<!-- dialpad -->
+						<i class="svg-dialpad">dialpad</i>
+						
+					</div>
+					<h2>dialpad</h2>
+				</li>
+				<li title="email">
+					<div class="icon-box">
+						
+						<!-- email -->
+						<i class="svg-email">email</i>
+						
+					</div>
+					<h2>email</h2>
+				</li>
+				<li title="forum">
+					<div class="icon-box">
+						
+						<!-- forum -->
+						<i class="svg-forum">forum</i>
+						
+					</div>
+					<h2>forum</h2>
+				</li>
+				<li title="import_contacts">
+					<div class="icon-box">
+						
+						<!-- import_contacts -->
+						<i class="svg-import_contacts">import_contacts</i>
+						
+					</div>
+					<h2>import_contacts</h2>
+				</li>
+				<li title="import_export">
+					<div class="icon-box">
+						
+						<!-- import_export -->
+						<i class="svg-import_export">import_export</i>
+						
+					</div>
+					<h2>import_export</h2>
+				</li>
+				<li title="invert_colors_off">
+					<div class="icon-box">
+						
+						<!-- invert_colors_off -->
+						<i class="svg-invert_colors_off">invert_colors_off</i>
+						
+					</div>
+					<h2>invert_colors_off</h2>
+				</li>
+				<li title="live_help">
+					<div class="icon-box">
+						
+						<!-- live_help -->
+						<i class="svg-live_help">live_help</i>
+						
+					</div>
+					<h2>live_help</h2>
+				</li>
+				<li title="location_off">
+					<div class="icon-box">
+						
+						<!-- location_off -->
+						<i class="svg-location_off">location_off</i>
+						
+					</div>
+					<h2>location_off</h2>
+				</li>
+				<li title="location_on">
+					<div class="icon-box">
+						
+						<!-- location_on -->
+						<i class="svg-location_on">location_on</i>
+						
+					</div>
+					<h2>location_on</h2>
+				</li>
+				<li title="mail_outline">
+					<div class="icon-box">
+						
+						<!-- mail_outline -->
+						<i class="svg-mail_outline">mail_outline</i>
+						
+					</div>
+					<h2>mail_outline</h2>
+				</li>
+				<li title="message">
+					<div class="icon-box">
+						
+						<!-- message -->
+						<i class="svg-message">message</i>
+						
+					</div>
+					<h2>message</h2>
+				</li>
+				<li title="no_sim">
+					<div class="icon-box">
+						
+						<!-- no_sim -->
+						<i class="svg-no_sim">no_sim</i>
+						
+					</div>
+					<h2>no_sim</h2>
+				</li>
+				<li title="phone">
+					<div class="icon-box">
+						
+						<!-- phone -->
+						<i class="svg-phone">phone</i>
+						
+					</div>
+					<h2>phone</h2>
+				</li>
+				<li title="phonelink_erase">
+					<div class="icon-box">
+						
+						<!-- phonelink_erase -->
+						<i class="svg-phonelink_erase">phonelink_erase</i>
+						
+					</div>
+					<h2>phonelink_erase</h2>
+				</li>
+				<li title="phonelink_lock">
+					<div class="icon-box">
+						
+						<!-- phonelink_lock -->
+						<i class="svg-phonelink_lock">phonelink_lock</i>
+						
+					</div>
+					<h2>phonelink_lock</h2>
+				</li>
+				<li title="phonelink_ring">
+					<div class="icon-box">
+						
+						<!-- phonelink_ring -->
+						<i class="svg-phonelink_ring">phonelink_ring</i>
+						
+					</div>
+					<h2>phonelink_ring</h2>
+				</li>
+				<li title="phonelink_setup">
+					<div class="icon-box">
+						
+						<!-- phonelink_setup -->
+						<i class="svg-phonelink_setup">phonelink_setup</i>
+						
+					</div>
+					<h2>phonelink_setup</h2>
+				</li>
+				<li title="portable_wifi_off">
+					<div class="icon-box">
+						
+						<!-- portable_wifi_off -->
+						<i class="svg-portable_wifi_off">portable_wifi_off</i>
+						
+					</div>
+					<h2>portable_wifi_off</h2>
+				</li>
+				<li title="present_to_all">
+					<div class="icon-box">
+						
+						<!-- present_to_all -->
+						<i class="svg-present_to_all">present_to_all</i>
+						
+					</div>
+					<h2>present_to_all</h2>
+				</li>
+				<li title="ring_volume">
+					<div class="icon-box">
+						
+						<!-- ring_volume -->
+						<i class="svg-ring_volume">ring_volume</i>
+						
+					</div>
+					<h2>ring_volume</h2>
+				</li>
+				<li title="rss_feed">
+					<div class="icon-box">
+						
+						<!-- rss_feed -->
+						<i class="svg-rss_feed">rss_feed</i>
+						
+					</div>
+					<h2>rss_feed</h2>
+				</li>
+				<li title="screen_share">
+					<div class="icon-box">
+						
+						<!-- screen_share -->
+						<i class="svg-screen_share">screen_share</i>
+						
+					</div>
+					<h2>screen_share</h2>
+				</li>
+				<li title="speaker_phone">
+					<div class="icon-box">
+						
+						<!-- speaker_phone -->
+						<i class="svg-speaker_phone">speaker_phone</i>
+						
+					</div>
+					<h2>speaker_phone</h2>
+				</li>
+				<li title="stay_current_landscape">
+					<div class="icon-box">
+						
+						<!-- stay_current_landscape -->
+						<i class="svg-stay_current_landscape">stay_current_landscape</i>
+						
+					</div>
+					<h2>stay_current_landscape</h2>
+				</li>
+				<li title="stay_current_portrait">
+					<div class="icon-box">
+						
+						<!-- stay_current_portrait -->
+						<i class="svg-stay_current_portrait">stay_current_portrait</i>
+						
+					</div>
+					<h2>stay_current_portrait</h2>
+				</li>
+				<li title="stay_primary_landscape">
+					<div class="icon-box">
+						
+						<!-- stay_primary_landscape -->
+						<i class="svg-stay_primary_landscape">stay_primary_landscape</i>
+						
+					</div>
+					<h2>stay_primary_landscape</h2>
+				</li>
+				<li title="stay_primary_portrait">
+					<div class="icon-box">
+						
+						<!-- stay_primary_portrait -->
+						<i class="svg-stay_primary_portrait">stay_primary_portrait</i>
+						
+					</div>
+					<h2>stay_primary_portrait</h2>
+				</li>
+				<li title="stop_screen_share">
+					<div class="icon-box">
+						
+						<!-- stop_screen_share -->
+						<i class="svg-stop_screen_share">stop_screen_share</i>
+						
+					</div>
+					<h2>stop_screen_share</h2>
+				</li>
+				<li title="swap_calls">
+					<div class="icon-box">
+						
+						<!-- swap_calls -->
+						<i class="svg-swap_calls">swap_calls</i>
+						
+					</div>
+					<h2>swap_calls</h2>
+				</li>
+				<li title="textsms">
+					<div class="icon-box">
+						
+						<!-- textsms -->
+						<i class="svg-textsms">textsms</i>
+						
+					</div>
+					<h2>textsms</h2>
+				</li>
+				<li title="voicemail">
+					<div class="icon-box">
+						
+						<!-- voicemail -->
+						<i class="svg-voicemail">voicemail</i>
+						
+					</div>
+					<h2>voicemail</h2>
+				</li>
+				<li title="vpn_key">
+					<div class="icon-box">
+						
+						<!-- vpn_key -->
+						<i class="svg-vpn_key">vpn_key</i>
+						
+					</div>
+					<h2>vpn_key</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sat, 30 Apr 2016 17:56:48 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block}</style>
+		
+<!--
+	
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite. 
+
+-->
+
+<style type="text/css">
+.svg-attach_file {
+	background: url("svg-sprite-editor.svg") 12.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-attach_money {
+	background: url("svg-sprite-editor.svg") 50% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_all {
+	background: url("svg-sprite-editor.svg") 0 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_bottom {
+	background: url("svg-sprite-editor.svg") 12.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_clear {
+	background: url("svg-sprite-editor.svg") 25% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_color {
+	background: url("svg-sprite-editor.svg") 25% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_horizontal {
+	background: url("svg-sprite-editor.svg") 0 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_inner {
+	background: url("svg-sprite-editor.svg") 12.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_left {
+	background: url("svg-sprite-editor.svg") 25% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_outer {
+	background: url("svg-sprite-editor.svg") 37.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_right {
+	background: url("svg-sprite-editor.svg") 37.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_style {
+	background: url("svg-sprite-editor.svg") 37.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_top {
+	background: url("svg-sprite-editor.svg") 0 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-border_vertical {
+	background: url("svg-sprite-editor.svg") 12.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-bubble_chart {
+	background: url("svg-sprite-editor.svg") 25% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-drag_handle {
+	background: url("svg-sprite-editor.svg") 37.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_align_center {
+	background: url("svg-sprite-editor.svg") 50% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_align_justify {
+	background: url("svg-sprite-editor.svg") 50% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_align_left {
+	background: url("svg-sprite-editor.svg") 50% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_align_right {
+	background: url("svg-sprite-editor.svg") 50% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_bold {
+	background: url("svg-sprite-editor.svg") 0 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_clear {
+	background: url("svg-sprite-editor.svg") 12.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_color_fill {
+	background: url("svg-sprite-editor.svg") 25% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_color_reset {
+	background: url("svg-sprite-editor.svg") 37.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_color_text {
+	background: url("svg-sprite-editor.svg") 50% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_indent_decrease {
+	background: url("svg-sprite-editor.svg") 62.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_indent_increase {
+	background: url("svg-sprite-editor.svg") 62.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_italic {
+	background: url("svg-sprite-editor.svg") 62.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_line_spacing {
+	background: url("svg-sprite-editor.svg") 62.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_list_bulleted {
+	background: url("svg-sprite-editor.svg") 62.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_list_numbered {
+	background: url("svg-sprite-editor.svg") 0 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_paint {
+	background: url("svg-sprite-editor.svg") 12.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_quote {
+	background: url("svg-sprite-editor.svg") 25% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_shapes {
+	background: url("svg-sprite-editor.svg") 37.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_size {
+	background: url("svg-sprite-editor.svg") 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_strikethrough {
+	background: url("svg-sprite-editor.svg") 62.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_textdirection_l_to_r {
+	background: url("svg-sprite-editor.svg") 75% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_textdirection_r_to_l {
+	background: url("svg-sprite-editor.svg") 75% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-format_underlined {
+	background: url("svg-sprite-editor.svg") 75% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-functions {
+	background: url("svg-sprite-editor.svg") 75% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-highlight {
+	background: url("svg-sprite-editor.svg") 75% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_chart {
+	background: url("svg-sprite-editor.svg") 75% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_comment {
+	background: url("svg-sprite-editor.svg") 0 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_drive_file {
+	background: url("svg-sprite-editor.svg") 12.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_emoticon {
+	background: url("svg-sprite-editor.svg") 25% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_invitation {
+	background: url("svg-sprite-editor.svg") 37.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_link {
+	background: url("svg-sprite-editor.svg") 50% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-insert_photo {
+	background: url("svg-sprite-editor.svg") 62.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-linear_scale {
+	background: url("svg-sprite-editor.svg") 75% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-merge_type {
+	background: url("svg-sprite-editor.svg") 87.5% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-mode_comment {
+	background: url("svg-sprite-editor.svg") 87.5% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-mode_edit {
+	background: url("svg-sprite-editor.svg") 87.5% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-monetization_on {
+	background: url("svg-sprite-editor.svg") 87.5% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-money_off {
+	background: url("svg-sprite-editor.svg") 87.5% 57.142857142857146% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-multiline_chart {
+	background: url("svg-sprite-editor.svg") 87.5% 71.42857142857143% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-pie_chart {
+	background: url("svg-sprite-editor.svg") 87.5% 85.71428571428571% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-pie_chart_outlined {
+	background: url("svg-sprite-editor.svg") 0 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-publish {
+	background: url("svg-sprite-editor.svg") 12.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-short_text {
+	background: url("svg-sprite-editor.svg") 25% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-show_chart {
+	background: url("svg-sprite-editor.svg") 37.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-space_bar {
+	background: url("svg-sprite-editor.svg") 50% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-strikethrough_s {
+	background: url("svg-sprite-editor.svg") 62.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-text_fields {
+	background: url("svg-sprite-editor.svg") 75% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-title {
+	background: url("svg-sprite-editor.svg") 87.5% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-vertical_align_bottom {
+	background: url("svg-sprite-editor.svg") 100% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-vertical_align_center {
+	background: url("svg-sprite-editor.svg") 100% 14.285714285714286% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-vertical_align_top {
+	background: url("svg-sprite-editor.svg") 100% 28.571428571428573% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-wrap_text {
+	background: url("svg-sprite-editor.svg") 100% 42.857142857142854% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+			
+<!--
+	
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				
+				<li title="attach_file">
+					<div class="icon-box">
+						
+						<!-- attach_file -->
+						<i class="svg-attach_file">attach_file</i>
+						
+					</div>
+					<h2>attach_file</h2>
+				</li>
+				<li title="attach_money">
+					<div class="icon-box">
+						
+						<!-- attach_money -->
+						<i class="svg-attach_money">attach_money</i>
+						
+					</div>
+					<h2>attach_money</h2>
+				</li>
+				<li title="border_all">
+					<div class="icon-box">
+						
+						<!-- border_all -->
+						<i class="svg-border_all">border_all</i>
+						
+					</div>
+					<h2>border_all</h2>
+				</li>
+				<li title="border_bottom">
+					<div class="icon-box">
+						
+						<!-- border_bottom -->
+						<i class="svg-border_bottom">border_bottom</i>
+						
+					</div>
+					<h2>border_bottom</h2>
+				</li>
+				<li title="border_clear">
+					<div class="icon-box">
+						
+						<!-- border_clear -->
+						<i class="svg-border_clear">border_clear</i>
+						
+					</div>
+					<h2>border_clear</h2>
+				</li>
+				<li title="border_color">
+					<div class="icon-box">
+						
+						<!-- border_color -->
+						<i class="svg-border_color">border_color</i>
+						
+					</div>
+					<h2>border_color</h2>
+				</li>
+				<li title="border_horizontal">
+					<div class="icon-box">
+						
+						<!-- border_horizontal -->
+						<i class="svg-border_horizontal">border_horizontal</i>
+						
+					</div>
+					<h2>border_horizontal</h2>
+				</li>
+				<li title="border_inner">
+					<div class="icon-box">
+						
+						<!-- border_inner -->
+						<i class="svg-border_inner">border_inner</i>
+						
+					</div>
+					<h2>border_inner</h2>
+				</li>
+				<li title="border_left">
+					<div class="icon-box">
+						
+						<!-- border_left -->
+						<i class="svg-border_left">border_left</i>
+						
+					</div>
+					<h2>border_left</h2>
+				</li>
+				<li title="border_outer">
+					<div class="icon-box">
+						
+						<!-- border_outer -->
+						<i class="svg-border_outer">border_outer</i>
+						
+					</div>
+					<h2>border_outer</h2>
+				</li>
+				<li title="border_right">
+					<div class="icon-box">
+						
+						<!-- border_right -->
+						<i class="svg-border_right">border_right</i>
+						
+					</div>
+					<h2>border_right</h2>
+				</li>
+				<li title="border_style">
+					<div class="icon-box">
+						
+						<!-- border_style -->
+						<i class="svg-border_style">border_style</i>
+						
+					</div>
+					<h2>border_style</h2>
+				</li>
+				<li title="border_top">
+					<div class="icon-box">
+						
+						<!-- border_top -->
+						<i class="svg-border_top">border_top</i>
+						
+					</div>
+					<h2>border_top</h2>
+				</li>
+				<li title="border_vertical">
+					<div class="icon-box">
+						
+						<!-- border_vertical -->
+						<i class="svg-border_vertical">border_vertical</i>
+						
+					</div>
+					<h2>border_vertical</h2>
+				</li>
+				<li title="bubble_chart">
+					<div class="icon-box">
+						
+						<!-- bubble_chart -->
+						<i class="svg-bubble_chart">bubble_chart</i>
+						
+					</div>
+					<h2>bubble_chart</h2>
+				</li>
+				<li title="drag_handle">
+					<div class="icon-box">
+						
+						<!-- drag_handle -->
+						<i class="svg-drag_handle">drag_handle</i>
+						
+					</div>
+					<h2>drag_handle</h2>
+				</li>
+				<li title="format_align_center">
+					<div class="icon-box">
+						
+						<!-- format_align_center -->
+						<i class="svg-format_align_center">format_align_center</i>
+						
+					</div>
+					<h2>format_align_center</h2>
+				</li>
+				<li title="format_align_justify">
+					<div class="icon-box">
+						
+						<!-- format_align_justify -->
+						<i class="svg-format_align_justify">format_align_justify</i>
+						
+					</div>
+					<h2>format_align_justify</h2>
+				</li>
+				<li title="format_align_left">
+					<div class="icon-box">
+						
+						<!-- format_align_left -->
+						<i class="svg-format_align_left">format_align_left</i>
+						
+					</div>
+					<h2>format_align_left</h2>
+				</li>
+				<li title="format_align_right">
+					<div class="icon-box">
+						
+						<!-- format_align_right -->
+						<i class="svg-format_align_right">format_align_right</i>
+						
+					</div>
+					<h2>format_align_right</h2>
+				</li>
+				<li title="format_bold">
+					<div class="icon-box">
+						
+						<!-- format_bold -->
+						<i class="svg-format_bold">format_bold</i>
+						
+					</div>
+					<h2>format_bold</h2>
+				</li>
+				<li title="format_clear">
+					<div class="icon-box">
+						
+						<!-- format_clear -->
+						<i class="svg-format_clear">format_clear</i>
+						
+					</div>
+					<h2>format_clear</h2>
+				</li>
+				<li title="format_color_fill">
+					<div class="icon-box">
+						
+						<!-- format_color_fill -->
+						<i class="svg-format_color_fill">format_color_fill</i>
+						
+					</div>
+					<h2>format_color_fill</h2>
+				</li>
+				<li title="format_color_reset">
+					<div class="icon-box">
+						
+						<!-- format_color_reset -->
+						<i class="svg-format_color_reset">format_color_reset</i>
+						
+					</div>
+					<h2>format_color_reset</h2>
+				</li>
+				<li title="format_color_text">
+					<div class="icon-box">
+						
+						<!-- format_color_text -->
+						<i class="svg-format_color_text">format_color_text</i>
+						
+					</div>
+					<h2>format_color_text</h2>
+				</li>
+				<li title="format_indent_decrease">
+					<div class="icon-box">
+						
+						<!-- format_indent_decrease -->
+						<i class="svg-format_indent_decrease">format_indent_decrease</i>
+						
+					</div>
+					<h2>format_indent_decrease</h2>
+				</li>
+				<li title="format_indent_increase">
+					<div class="icon-box">
+						
+						<!-- format_indent_increase -->
+						<i class="svg-format_indent_increase">format_indent_increase</i>
+						
+					</div>
+					<h2>format_indent_increase</h2>
+				</li>
+				<li title="format_italic">
+					<div class="icon-box">
+						
+						<!-- format_italic -->
+						<i class="svg-format_italic">format_italic</i>
+						
+					</div>
+					<h2>format_italic</h2>
+				</li>
+				<li title="format_line_spacing">
+					<div class="icon-box">
+						
+						<!-- format_line_spacing -->
+						<i class="svg-format_line_spacing">format_line_spacing</i>
+						
+					</div>
+					<h2>format_line_spacing</h2>
+				</li>
+				<li title="format_list_bulleted">
+					<div class="icon-box">
+						
+						<!-- format_list_bulleted -->
+						<i class="svg-format_list_bulleted">format_list_bulleted</i>
+						
+					</div>
+					<h2>format_list_bulleted</h2>
+				</li>
+				<li title="format_list_numbered">
+					<div class="icon-box">
+						
+						<!-- format_list_numbered -->
+						<i class="svg-format_list_numbered">format_list_numbered</i>
+						
+					</div>
+					<h2>format_list_numbered</h2>
+				</li>
+				<li title="format_paint">
+					<div class="icon-box">
+						
+						<!-- format_paint -->
+						<i class="svg-format_paint">format_paint</i>
+						
+					</div>
+					<h2>format_paint</h2>
+				</li>
+				<li title="format_quote">
+					<div class="icon-box">
+						
+						<!-- format_quote -->
+						<i class="svg-format_quote">format_quote</i>
+						
+					</div>
+					<h2>format_quote</h2>
+				</li>
+				<li title="format_shapes">
+					<div class="icon-box">
+						
+						<!-- format_shapes -->
+						<i class="svg-format_shapes">format_shapes</i>
+						
+					</div>
+					<h2>format_shapes</h2>
+				</li>
+				<li title="format_size">
+					<div class="icon-box">
+						
+						<!-- format_size -->
+						<i class="svg-format_size">format_size</i>
+						
+					</div>
+					<h2>format_size</h2>
+				</li>
+				<li title="format_strikethrough">
+					<div class="icon-box">
+						
+						<!-- format_strikethrough -->
+						<i class="svg-format_strikethrough">format_strikethrough</i>
+						
+					</div>
+					<h2>format_strikethrough</h2>
+				</li>
+				<li title="format_textdirection_l_to_r">
+					<div class="icon-box">
+						
+						<!-- format_textdirection_l_to_r -->
+						<i class="svg-format_textdirection_l_to_r">format_textdirection_l_to_r</i>
+						
+					</div>
+					<h2>format_textdirection_l_to_r</h2>
+				</li>
+				<li title="format_textdirection_r_to_l">
+					<div class="icon-box">
+						
+						<!-- format_textdirection_r_to_l -->
+						<i class="svg-format_textdirection_r_to_l">format_textdirection_r_to_l</i>
+						
+					</div>
+					<h2>format_textdirection_r_to_l</h2>
+				</li>
+				<li title="format_underlined">
+					<div class="icon-box">
+						
+						<!-- format_underlined -->
+						<i class="svg-format_underlined">format_underlined</i>
+						
+					</div>
+					<h2>format_underlined</h2>
+				</li>
+				<li title="functions">
+					<div class="icon-box">
+						
+						<!-- functions -->
+						<i class="svg-functions">functions</i>
+						
+					</div>
+					<h2>functions</h2>
+				</li>
+				<li title="highlight">
+					<div class="icon-box">
+						
+						<!-- highlight -->
+						<i class="svg-highlight">highlight</i>
+						
+					</div>
+					<h2>highlight</h2>
+				</li>
+				<li title="insert_chart">
+					<div class="icon-box">
+						
+						<!-- insert_chart -->
+						<i class="svg-insert_chart">insert_chart</i>
+						
+					</div>
+					<h2>insert_chart</h2>
+				</li>
+				<li title="insert_comment">
+					<div class="icon-box">
+						
+						<!-- insert_comment -->
+						<i class="svg-insert_comment">insert_comment</i>
+						
+					</div>
+					<h2>insert_comment</h2>
+				</li>
+				<li title="insert_drive_file">
+					<div class="icon-box">
+						
+						<!-- insert_drive_file -->
+						<i class="svg-insert_drive_file">insert_drive_file</i>
+						
+					</div>
+					<h2>insert_drive_file</h2>
+				</li>
+				<li title="insert_emoticon">
+					<div class="icon-box">
+						
+						<!-- insert_emoticon -->
+						<i class="svg-insert_emoticon">insert_emoticon</i>
+						
+					</div>
+					<h2>insert_emoticon</h2>
+				</li>
+				<li title="insert_invitation">
+					<div class="icon-box">
+						
+						<!-- insert_invitation -->
+						<i class="svg-insert_invitation">insert_invitation</i>
+						
+					</div>
+					<h2>insert_invitation</h2>
+				</li>
+				<li title="insert_link">
+					<div class="icon-box">
+						
+						<!-- insert_link -->
+						<i class="svg-insert_link">insert_link</i>
+						
+					</div>
+					<h2>insert_link</h2>
+				</li>
+				<li title="insert_photo">
+					<div class="icon-box">
+						
+						<!-- insert_photo -->
+						<i class="svg-insert_photo">insert_photo</i>
+						
+					</div>
+					<h2>insert_photo</h2>
+				</li>
+				<li title="linear_scale">
+					<div class="icon-box">
+						
+						<!-- linear_scale -->
+						<i class="svg-linear_scale">linear_scale</i>
+						
+					</div>
+					<h2>linear_scale</h2>
+				</li>
+				<li title="merge_type">
+					<div class="icon-box">
+						
+						<!-- merge_type -->
+						<i class="svg-merge_type">merge_type</i>
+						
+					</div>
+					<h2>merge_type</h2>
+				</li>
+				<li title="mode_comment">
+					<div class="icon-box">
+						
+						<!-- mode_comment -->
+						<i class="svg-mode_comment">mode_comment</i>
+						
+					</div>
+					<h2>mode_comment</h2>
+				</li>
+				<li title="mode_edit">
+					<div class="icon-box">
+						
+						<!-- mode_edit -->
+						<i class="svg-mode_edit">mode_edit</i>
+						
+					</div>
+					<h2>mode_edit</h2>
+				</li>
+				<li title="monetization_on">
+					<div class="icon-box">
+						
+						<!-- monetization_on -->
+						<i class="svg-monetization_on">monetization_on</i>
+						
+					</div>
+					<h2>monetization_on</h2>
+				</li>
+				<li title="money_off">
+					<div class="icon-box">
+						
+						<!-- money_off -->
+						<i class="svg-money_off">money_off</i>
+						
+					</div>
+					<h2>money_off</h2>
+				</li>
+				<li title="multiline_chart">
+					<div class="icon-box">
+						
+						<!-- multiline_chart -->
+						<i class="svg-multiline_chart">multiline_chart</i>
+						
+					</div>
+					<h2>multiline_chart</h2>
+				</li>
+				<li title="pie_chart">
+					<div class="icon-box">
+						
+						<!-- pie_chart -->
+						<i class="svg-pie_chart">pie_chart</i>
+						
+					</div>
+					<h2>pie_chart</h2>
+				</li>
+				<li title="pie_chart_outlined">
+					<div class="icon-box">
+						
+						<!-- pie_chart_outlined -->
+						<i class="svg-pie_chart_outlined">pie_chart_outlined</i>
+						
+					</div>
+					<h2>pie_chart_outlined</h2>
+				</li>
+				<li title="publish">
+					<div class="icon-box">
+						
+						<!-- publish -->
+						<i class="svg-publish">publish</i>
+						
+					</div>
+					<h2>publish</h2>
+				</li>
+				<li title="short_text">
+					<div class="icon-box">
+						
+						<!-- short_text -->
+						<i class="svg-short_text">short_text</i>
+						
+					</div>
+					<h2>short_text</h2>
+				</li>
+				<li title="show_chart">
+					<div class="icon-box">
+						
+						<!-- show_chart -->
+						<i class="svg-show_chart">show_chart</i>
+						
+					</div>
+					<h2>show_chart</h2>
+				</li>
+				<li title="space_bar">
+					<div class="icon-box">
+						
+						<!-- space_bar -->
+						<i class="svg-space_bar">space_bar</i>
+						
+					</div>
+					<h2>space_bar</h2>
+				</li>
+				<li title="strikethrough_s">
+					<div class="icon-box">
+						
+						<!-- strikethrough_s -->
+						<i class="svg-strikethrough_s">strikethrough_s</i>
+						
+					</div>
+					<h2>strikethrough_s</h2>
+				</li>
+				<li title="text_fields">
+					<div class="icon-box">
+						
+						<!-- text_fields -->
+						<i class="svg-text_fields">text_fields</i>
+						
+					</div>
+					<h2>text_fields</h2>
+				</li>
+				<li title="title">
+					<div class="icon-box">
+						
+						<!-- title -->
+						<i class="svg-title">title</i>
+						
+					</div>
+					<h2>title</h2>
+				</li>
+				<li title="vertical_align_bottom">
+					<div class="icon-box">
+						
+						<!-- vertical_align_bottom -->
+						<i class="svg-vertical_align_bottom">vertical_align_bottom</i>
+						
+					</div>
+					<h2>vertical_align_bottom</h2>
+				</li>
+				<li title="vertical_align_center">
+					<div class="icon-box">
+						
+						<!-- vertical_align_center -->
+						<i class="svg-vertical_align_center">vertical_align_center</i>
+						
+					</div>
+					<h2>vertical_align_center</h2>
+				</li>
+				<li title="vertical_align_top">
+					<div class="icon-box">
+						
+						<!-- vertical_align_top -->
+						<i class="svg-vertical_align_top">vertical_align_top</i>
+						
+					</div>
+					<h2>vertical_align_top</h2>
+				</li>
+				<li title="wrap_text">
+					<div class="icon-box">
+						
+						<!-- wrap_text -->
+						<i class="svg-wrap_text">wrap_text</i>
+						
+					</div>
+					<h2>wrap_text</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sat, 30 Apr 2016 17:56:48 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

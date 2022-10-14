@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block}</style>
+		
+<!--
+	
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite. 
+
+-->
+
+<style type="text/css">
+.svg-apps {
+	background: url("svg-sprite-navigation.svg") 20% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_back {
+	background: url("svg-sprite-navigation.svg") 20% 75% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_downward {
+	background: url("svg-sprite-navigation.svg") 0 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_drop_down {
+	background: url("svg-sprite-navigation.svg") 20% 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_drop_down_circle {
+	background: url("svg-sprite-navigation.svg") 40% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_drop_up {
+	background: url("svg-sprite-navigation.svg") 40% 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_forward {
+	background: url("svg-sprite-navigation.svg") 0 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-arrow_upward {
+	background: url("svg-sprite-navigation.svg") 20% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-cancel {
+	background: url("svg-sprite-navigation.svg") 40% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-check {
+	background: url("svg-sprite-navigation.svg") 60% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-chevron_left {
+	background: url("svg-sprite-navigation.svg") 60% 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-chevron_right {
+	background: url("svg-sprite-navigation.svg") 60% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-close {
+	background: url("svg-sprite-navigation.svg") 0 75% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-expand_less {
+	background: url("svg-sprite-navigation.svg") 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-expand_more {
+	background: url("svg-sprite-navigation.svg") 40% 75% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-first_page {
+	background: url("svg-sprite-navigation.svg") 60% 75% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-fullscreen {
+	background: url("svg-sprite-navigation.svg") 80% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-fullscreen_exit {
+	background: url("svg-sprite-navigation.svg") 80% 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-last_page {
+	background: url("svg-sprite-navigation.svg") 80% 50% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-menu {
+	background: url("svg-sprite-navigation.svg") 80% 75% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-more_horiz {
+	background: url("svg-sprite-navigation.svg") 0 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-more_vert {
+	background: url("svg-sprite-navigation.svg") 20% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-refresh {
+	background: url("svg-sprite-navigation.svg") 40% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-subdirectory_arrow_left {
+	background: url("svg-sprite-navigation.svg") 60% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-subdirectory_arrow_right {
+	background: url("svg-sprite-navigation.svg") 80% 100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-unfold_less {
+	background: url("svg-sprite-navigation.svg") 100% 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.svg-unfold_more {
+	background: url("svg-sprite-navigation.svg") 100% 25% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+			
+<!--
+	
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				
+				<li title="apps">
+					<div class="icon-box">
+						
+						<!-- apps -->
+						<i class="svg-apps">apps</i>
+						
+					</div>
+					<h2>apps</h2>
+				</li>
+				<li title="arrow_back">
+					<div class="icon-box">
+						
+						<!-- arrow_back -->
+						<i class="svg-arrow_back">arrow_back</i>
+						
+					</div>
+					<h2>arrow_back</h2>
+				</li>
+				<li title="arrow_downward">
+					<div class="icon-box">
+						
+						<!-- arrow_downward -->
+						<i class="svg-arrow_downward">arrow_downward</i>
+						
+					</div>
+					<h2>arrow_downward</h2>
+				</li>
+				<li title="arrow_drop_down">
+					<div class="icon-box">
+						
+						<!-- arrow_drop_down -->
+						<i class="svg-arrow_drop_down">arrow_drop_down</i>
+						
+					</div>
+					<h2>arrow_drop_down</h2>
+				</li>
+				<li title="arrow_drop_down_circle">
+					<div class="icon-box">
+						
+						<!-- arrow_drop_down_circle -->
+						<i class="svg-arrow_drop_down_circle">arrow_drop_down_circle</i>
+						
+					</div>
+					<h2>arrow_drop_down_circle</h2>
+				</li>
+				<li title="arrow_drop_up">
+					<div class="icon-box">
+						
+						<!-- arrow_drop_up -->
+						<i class="svg-arrow_drop_up">arrow_drop_up</i>
+						
+					</div>
+					<h2>arrow_drop_up</h2>
+				</li>
+				<li title="arrow_forward">
+					<div class="icon-box">
+						
+						<!-- arrow_forward -->
+						<i class="svg-arrow_forward">arrow_forward</i>
+						
+					</div>
+					<h2>arrow_forward</h2>
+				</li>
+				<li title="arrow_upward">
+					<div class="icon-box">
+						
+						<!-- arrow_upward -->
+						<i class="svg-arrow_upward">arrow_upward</i>
+						
+					</div>
+					<h2>arrow_upward</h2>
+				</li>
+				<li title="cancel">
+					<div class="icon-box">
+						
+						<!-- cancel -->
+						<i class="svg-cancel">cancel</i>
+						
+					</div>
+					<h2>cancel</h2>
+				</li>
+				<li title="check">
+					<div class="icon-box">
+						
+						<!-- check -->
+						<i class="svg-check">check</i>
+						
+					</div>
+					<h2>check</h2>
+				</li>
+				<li title="chevron_left">
+					<div class="icon-box">
+						
+						<!-- chevron_left -->
+						<i class="svg-chevron_left">chevron_left</i>
+						
+					</div>
+					<h2>chevron_left</h2>
+				</li>
+				<li title="chevron_right">
+					<div class="icon-box">
+						
+						<!-- chevron_right -->
+						<i class="svg-chevron_right">chevron_right</i>
+						
+					</div>
+					<h2>chevron_right</h2>
+				</li>
+				<li title="close">
+					<div class="icon-box">
+						
+						<!-- close -->
+						<i class="svg-close">close</i>
+						
+					</div>
+					<h2>close</h2>
+				</li>
+				<li title="expand_less">
+					<div class="icon-box">
+						
+						<!-- expand_less -->
+						<i class="svg-expand_less">expand_less</i>
+						
+					</div>
+					<h2>expand_less</h2>
+				</li>
+				<li title="expand_more">
+					<div class="icon-box">
+						
+						<!-- expand_more -->
+						<i class="svg-expand_more">expand_more</i>
+						
+					</div>
+					<h2>expand_more</h2>
+				</li>
+				<li title="first_page">
+					<div class="icon-box">
+						
+						<!-- first_page -->
+						<i class="svg-first_page">first_page</i>
+						
+					</div>
+					<h2>first_page</h2>
+				</li>
+				<li title="fullscreen">
+					<div class="icon-box">
+						
+						<!-- fullscreen -->
+						<i class="svg-fullscreen">fullscreen</i>
+						
+					</div>
+					<h2>fullscreen</h2>
+				</li>
+				<li title="fullscreen_exit">
+					<div class="icon-box">
+						
+						<!-- fullscreen_exit -->
+						<i class="svg-fullscreen_exit">fullscreen_exit</i>
+						
+					</div>
+					<h2>fullscreen_exit</h2>
+				</li>
+				<li title="last_page">
+					<div class="icon-box">
+						
+						<!-- last_page -->
+						<i class="svg-last_page">last_page</i>
+						
+					</div>
+					<h2>last_page</h2>
+				</li>
+				<li title="menu">
+					<div class="icon-box">
+						
+						<!-- menu -->
+						<i class="svg-menu">menu</i>
+						
+					</div>
+					<h2>menu</h2>
+				</li>
+				<li title="more_horiz">
+					<div class="icon-box">
+						
+						<!-- more_horiz -->
+						<i class="svg-more_horiz">more_horiz</i>
+						
+					</div>
+					<h2>more_horiz</h2>
+				</li>
+				<li title="more_vert">
+					<div class="icon-box">
+						
+						<!-- more_vert -->
+						<i class="svg-more_vert">more_vert</i>
+						
+					</div>
+					<h2>more_vert</h2>
+				</li>
+				<li title="refresh">
+					<div class="icon-box">
+						
+						<!-- refresh -->
+						<i class="svg-refresh">refresh</i>
+						
+					</div>
+					<h2>refresh</h2>
+				</li>
+				<li title="subdirectory_arrow_left">
+					<div class="icon-box">
+						
+						<!-- subdirectory_arrow_left -->
+						<i class="svg-subdirectory_arrow_left">subdirectory_arrow_left</i>
+						
+					</div>
+					<h2>subdirectory_arrow_left</h2>
+				</li>
+				<li title="subdirectory_arrow_right">
+					<div class="icon-box">
+						
+						<!-- subdirectory_arrow_right -->
+						<i class="svg-subdirectory_arrow_right">subdirectory_arrow_right</i>
+						
+					</div>
+					<h2>subdirectory_arrow_right</h2>
+				</li>
+				<li title="unfold_less">
+					<div class="icon-box">
+						
+						<!-- unfold_less -->
+						<i class="svg-unfold_less">unfold_less</i>
+						
+					</div>
+					<h2>unfold_less</h2>
+				</li>
+				<li title="unfold_more">
+					<div class="icon-box">
+						
+						<!-- unfold_more -->
+						<i class="svg-unfold_more">unfold_more</i>
+						
+					</div>
+					<h2>unfold_more</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sat, 30 Apr 2016 17:56:48 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>
