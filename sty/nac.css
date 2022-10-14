@@ -22,7 +22,15 @@
 
 @font-face {
     font-family: 'Material Icons';
-    src: url('../fonts/svg-sprites-24px-master/m');
+    src: url('../fonts/iconfont/material-icons-outlined.woff') format('woff');
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/iconfont/material-icons.woff2') format('woff2'), url('../fonts/iconfont/material-icons.woff') format('woff');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    text-decoration: none;
+    text-transform: none;
+    font-style: none;
 }
 
 * {
