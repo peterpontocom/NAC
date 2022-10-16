@@ -43,15 +43,6 @@
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-ul {
-    list-style: none;
-}
-
 html,body {
     height: 100vh;
 }
@@ -61,6 +52,20 @@ body.dark {
     background-color: #212121;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'title';
+    font-size: 3rem;
+}
+
 /*cABEÇA*/
 
 .header-menu {
@@ -68,11 +73,6 @@ body.dark {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-
-.header-menu .logo {
-    font-family: 'title';
-    font-size: 3rem;
 }
 
 .header-menu ul {
@@ -522,6 +522,12 @@ main {
     height: 50px;
     border-radius: 50px;
     margin-right: 10px;
+}
+
+.footer-maior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*PÉS*/
