@@ -48,6 +48,10 @@ html,body {
     overflow-x: hidden;
 }
 
+body {
+    transition: 0.4s;
+}
+
 body.dark {
     color: #fff;
     background-color: #212121;
@@ -63,7 +67,7 @@ body.dark .card .spn {
 }
 
 body.dark .card span {
-    color: #fff;
+    color: rgb(212, 212, 212);
 }
 
 a {
