@@ -50,11 +50,16 @@ html,body {
 body.dark {
     color: #fff;
     background-color: #212121;
+    transition: 0.4s;
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+a.linkDark {
+    color: #fff;
 }
 
 ul {
@@ -89,6 +94,54 @@ ul {
     border-radius: 20px;
     background-color: #000;
     color: #fff;
+}
+
+.switch {
+    position: relative;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 2rem;
+    background-color: #ececec;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.switch span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0.4rem;
+    transform: translateY(-50%);
+    width: 1.4rem;
+    height: 1.4rem;
+    background: linear-gradient(-45deg, #ff0080, #f3c000 70%);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.switch input:checked + span {
+    background: #38373f;
+}
+
+.switch input:checked + span::before {
+    left: calc(100% - 1.7rem);
+    background: #38373f;;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
 .banner {
@@ -525,9 +578,70 @@ main {
 }
 
 .footer-maior {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-maior h1 {
+    font-family: 'Mary Poppins';
+    font-size: 0.9em;
+    color: #09ff00;
+}
+
+.footer-maior a {
+    font-size: 0.7em;
+}
+
+.footer-maior form {
+    background-color: #d7d7d7;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.footer-maior form input {
+    background: transparent;
+    padding: 10px;
+}
+
+.footer-maior form button {
+    color: #fff;
+    font-size: 1.1em;
+    background-color: #09ff00;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-menor {
+    margin-top: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-menor ul {
+    display: flex;
+}
+
+.footer-menor ul li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer-menor .social img{
+    width: 25px;
+}
+
+.footer-menor .social a:not(:first-child){
+    margin-left: 10px;
+}
+
+.footer-final {
+    padding: 10px;
+    border-top: 1px solid #acacac;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 /*PÉS*/

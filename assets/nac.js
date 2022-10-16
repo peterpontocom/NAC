@@ -13,3 +13,14 @@ const pauseVideo = () => {
 }
 play.onclick = playVideo
 pause.onclick = pauseVideo
+
+const input = window.document.querySelector('#lig')
+const body = window.document.querySelector('body')
+const a = window.document.querySelector('a')
+
+const dark = () =>{
+    body.classList.toggle('dark')
+    a.classList.toggle('linkDark')
+}
+
+input.onclick = dark
