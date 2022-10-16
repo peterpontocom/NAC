@@ -55,7 +55,7 @@ body.dark {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
 }
 
 a.linkDark {
@@ -577,6 +577,8 @@ main {
     margin-right: 10px;
 }
 
+/*PÉS*/
+
 .footer-maior {
     margin-top: 30px;
     display: flex;
@@ -643,9 +645,6 @@ main {
     text-align: center;
     font-size: 1.1em;
 }
-
-/*PÉS*/
-
 /*ANIMAÇÕES*/
 
 @keyframes rotain {
@@ -702,5 +701,45 @@ main {
 
     100% {
         transform: rotate(0);
+    }
+}
+
+
+.gotop {
+    animation: gotop 2s ease alternate forwards;
+}
+
+.goleft {
+    animation: goleft 1s ease-in-out alternate forwards;
+}
+
+@keyframes gotop {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.5);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes goleft {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
