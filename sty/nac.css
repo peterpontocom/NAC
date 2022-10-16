@@ -45,12 +45,17 @@
 
 html,body {
     height: 100vh;
+    overflow-x: hidden;
 }
 
 body.dark {
     color: #fff;
     background-color: #212121;
     transition: 0.4s;
+}
+
+body.dark a {
+    color: #fff;
 }
 
 a {
@@ -476,8 +481,8 @@ main {
     position: absolute;
     width: 80%;
     top: -55px;
-    left: 90%;
-    transform: translateX(-90%);
+    left: 10%;
+    transform: translateX(-20%);
     margin: auto;
     background-color: #44c575;
     color: #000;
@@ -706,7 +711,7 @@ main {
 
 
 .gotop {
-    animation: gotop 2s ease alternate forwards;
+    animation: gotop 1s ease alternate forwards;
 }
 
 .goleft {
