@@ -58,6 +58,14 @@ body.dark a {
     color: #fff;
 }
 
+body.dark .card .spn {
+    color: #fff;
+}
+
+body.dark .card span {
+    color: #fff;
+}
+
 a {
     text-decoration: none;
     color: #000000;
