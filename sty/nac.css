@@ -70,6 +70,11 @@ body.dark .card span {
     color: rgb(212, 212, 212);
 }
 
+body.dark .banner::before {
+    animation: back 10s ease alternate forwards infinite;
+    background: linear-gradient(-45deg, #102d6d91, #0077ff71, #a3d9fb79, #8983d7a2);
+}
+
 a {
     text-decoration: none;
     color: #000000;
